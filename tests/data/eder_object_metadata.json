@@ -1,0 +1,3559 @@
+{
+  "objects": [
+    {
+      "object_id": 1,
+      "offset": 232160,
+      "size": 194440,
+      "type_id": 142,
+      "class_id": 142,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 2,
+      "offset": 426600,
+      "size": 112,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 3,
+      "offset": 426712,
+      "size": 168,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 4,
+      "offset": 426880,
+      "size": 220,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 5,
+      "offset": 427104,
+      "size": 232,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 6,
+      "offset": 427336,
+      "size": 192,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 7,
+      "offset": 427528,
+      "size": 588,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 8,
+      "offset": 428120,
+      "size": 588,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 9,
+      "offset": 428712,
+      "size": 588,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 10,
+      "offset": 429304,
+      "size": 584,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 11,
+      "offset": 429888,
+      "size": 616,
+      "type_id": 21,
+      "class_id": 21,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 12,
+      "offset": 430504,
+      "size": 24840,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 13,
+      "offset": 455344,
+      "size": 7128,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 14,
+      "offset": 462472,
+      "size": 65612,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 15,
+      "offset": 528088,
+      "size": 1100,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 16,
+      "offset": 529192,
+      "size": 5252,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 17,
+      "offset": 534448,
+      "size": 7128,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 18,
+      "offset": 541576,
+      "size": 2124,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 19,
+      "offset": 543704,
+      "size": 16460,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 20,
+      "offset": 560168,
+      "size": 8264,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 21,
+      "offset": 568432,
+      "size": 26260,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 22,
+      "offset": 594696,
+      "size": 8264,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 23,
+      "offset": 602960,
+      "size": 5256,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 24,
+      "offset": 608216,
+      "size": 21948,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 25,
+      "offset": 630168,
+      "size": 4172,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 26,
+      "offset": 634344,
+      "size": 7136,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 27,
+      "offset": 641480,
+      "size": 8268,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 28,
+      "offset": 649752,
+      "size": 7124,
+      "type_id": 28,
+      "class_id": 28,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 29,
+      "offset": 656880,
+      "size": 2920,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 30,
+      "offset": 659800,
+      "size": 8328,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 31,
+      "offset": 668128,
+      "size": 8328,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 32,
+      "offset": 676456,
+      "size": 10052,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 33,
+      "offset": 686512,
+      "size": 4548,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 34,
+      "offset": 691064,
+      "size": 4548,
+      "type_id": 43,
+      "class_id": 43,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 35,
+      "offset": 695616,
+      "size": 1936,
+      "type_id": 74,
+      "class_id": 74,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 36,
+      "offset": 697552,
+      "size": 11564,
+      "type_id": 74,
+      "class_id": 74,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 37,
+      "offset": 709120,
+      "size": 4208,
+      "type_id": 74,
+      "class_id": 74,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 38,
+      "offset": 713328,
+      "size": 19384,
+      "type_id": 83,
+      "class_id": 83,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 39,
+      "offset": 732712,
+      "size": 788,
+      "type_id": 90,
+      "class_id": 90,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 40,
+      "offset": 733504,
+      "size": 3608,
+      "type_id": 90,
+      "class_id": 90,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 41,
+      "offset": 737112,
+      "size": 1188,
+      "type_id": 90,
+      "class_id": 90,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 42,
+      "offset": 738304,
+      "size": 19628,
+      "type_id": 90,
+      "class_id": 90,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 43,
+      "offset": 757936,
+      "size": 2920,
+      "type_id": 91,
+      "class_id": 91,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 44,
+      "offset": 760856,
+      "size": 2228,
+      "type_id": 91,
+      "class_id": 91,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 45,
+      "offset": 763088,
+      "size": 93,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 46,
+      "offset": 763184,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 47,
+      "offset": 763256,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 48,
+      "offset": 763320,
+      "size": 85,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 49,
+      "offset": 763408,
+      "size": 85,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 50,
+      "offset": 763496,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 51,
+      "offset": 763568,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 52,
+      "offset": 763648,
+      "size": 85,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 53,
+      "offset": 763736,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 54,
+      "offset": 763816,
+      "size": 101,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 55,
+      "offset": 763920,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 56,
+      "offset": 764000,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 57,
+      "offset": 764064,
+      "size": 53,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 58,
+      "offset": 764120,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 59,
+      "offset": 764192,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 60,
+      "offset": 764264,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 61,
+      "offset": 764328,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 62,
+      "offset": 764408,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 63,
+      "offset": 764488,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 64,
+      "offset": 764560,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 65,
+      "offset": 764632,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 66,
+      "offset": 764704,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 67,
+      "offset": 764784,
+      "size": 85,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 68,
+      "offset": 764872,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 69,
+      "offset": 764936,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 70,
+      "offset": 765000,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 71,
+      "offset": 765072,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 72,
+      "offset": 765136,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 73,
+      "offset": 765200,
+      "size": 53,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 74,
+      "offset": 765256,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 75,
+      "offset": 765328,
+      "size": 69,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 76,
+      "offset": 765400,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 77,
+      "offset": 765480,
+      "size": 61,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 78,
+      "offset": 765544,
+      "size": 77,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 79,
+      "offset": 765624,
+      "size": 93,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 80,
+      "offset": 765720,
+      "size": 85,
+      "type_id": 115,
+      "class_id": 115,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 81,
+      "offset": 765808,
+      "size": 355,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 82,
+      "offset": 766168,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 83,
+      "offset": 766240,
+      "size": 79,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 84,
+      "offset": 766320,
+      "size": 75,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 85,
+      "offset": 766400,
+      "size": 83,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 86,
+      "offset": 766488,
+      "size": 91,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 87,
+      "offset": 766584,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 88,
+      "offset": 766656,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 89,
+      "offset": 766704,
+      "size": 119,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 90,
+      "offset": 766824,
+      "size": 107,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 91,
+      "offset": 766936,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 92,
+      "offset": 767008,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 93,
+      "offset": 767056,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 94,
+      "offset": 767096,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 95,
+      "offset": 767136,
+      "size": 31,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 96,
+      "offset": 767168,
+      "size": 67,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 97,
+      "offset": 767240,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 98,
+      "offset": 767288,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 99,
+      "offset": 767336,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 100,
+      "offset": 767408,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 101,
+      "offset": 767448,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 102,
+      "offset": 767496,
+      "size": 31,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 103,
+      "offset": 767528,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 104,
+      "offset": 767600,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 105,
+      "offset": 767640,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 106,
+      "offset": 767688,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 107,
+      "offset": 767736,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 108,
+      "offset": 767776,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 109,
+      "offset": 767824,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 110,
+      "offset": 767864,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 111,
+      "offset": 767936,
+      "size": 79,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 112,
+      "offset": 768016,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 113,
+      "offset": 768056,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 114,
+      "offset": 768096,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 115,
+      "offset": 768136,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 116,
+      "offset": 768184,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 117,
+      "offset": 768224,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 118,
+      "offset": 768272,
+      "size": 71,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 119,
+      "offset": 768344,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 120,
+      "offset": 768384,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 121,
+      "offset": 768424,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 122,
+      "offset": 768464,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 123,
+      "offset": 768504,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 124,
+      "offset": 768544,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 125,
+      "offset": 768584,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 126,
+      "offset": 768624,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 127,
+      "offset": 768664,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 128,
+      "offset": 768704,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 129,
+      "offset": 768744,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 130,
+      "offset": 768784,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 131,
+      "offset": 768824,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 132,
+      "offset": 768872,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 133,
+      "offset": 768912,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 134,
+      "offset": 768952,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 135,
+      "offset": 768992,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 136,
+      "offset": 769040,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 137,
+      "offset": 769080,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 138,
+      "offset": 769120,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 139,
+      "offset": 769160,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 140,
+      "offset": 769208,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 141,
+      "offset": 769248,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 142,
+      "offset": 769288,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 143,
+      "offset": 769328,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 144,
+      "offset": 769376,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 145,
+      "offset": 769416,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 146,
+      "offset": 769456,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 147,
+      "offset": 769496,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 148,
+      "offset": 769544,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 149,
+      "offset": 769584,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 150,
+      "offset": 769632,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 151,
+      "offset": 769680,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 152,
+      "offset": 769720,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 153,
+      "offset": 769768,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 154,
+      "offset": 769808,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 155,
+      "offset": 769856,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 156,
+      "offset": 769904,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 157,
+      "offset": 769944,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 158,
+      "offset": 769984,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 159,
+      "offset": 770032,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 160,
+      "offset": 770072,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 161,
+      "offset": 770120,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 162,
+      "offset": 770160,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 163,
+      "offset": 770200,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 164,
+      "offset": 770240,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 165,
+      "offset": 770288,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 166,
+      "offset": 770328,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 167,
+      "offset": 770376,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 168,
+      "offset": 770416,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 169,
+      "offset": 770464,
+      "size": 55,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 170,
+      "offset": 770520,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 171,
+      "offset": 770560,
+      "size": 31,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 172,
+      "offset": 770592,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 173,
+      "offset": 770640,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 174,
+      "offset": 770680,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 175,
+      "offset": 770720,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 176,
+      "offset": 770760,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 177,
+      "offset": 770800,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 178,
+      "offset": 770840,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 179,
+      "offset": 770880,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 180,
+      "offset": 770920,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 181,
+      "offset": 770960,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 182,
+      "offset": 771000,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 183,
+      "offset": 771048,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 184,
+      "offset": 771088,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 185,
+      "offset": 771136,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 186,
+      "offset": 771184,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 187,
+      "offset": 771232,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 188,
+      "offset": 771280,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 189,
+      "offset": 771328,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 190,
+      "offset": 771376,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 191,
+      "offset": 771424,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 192,
+      "offset": 771472,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 193,
+      "offset": 771512,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 194,
+      "offset": 771560,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 195,
+      "offset": 771600,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 196,
+      "offset": 771640,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 197,
+      "offset": 771680,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 198,
+      "offset": 771720,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 199,
+      "offset": 771760,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 200,
+      "offset": 771800,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 201,
+      "offset": 771840,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 202,
+      "offset": 771888,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 203,
+      "offset": 771936,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 204,
+      "offset": 771984,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 205,
+      "offset": 772032,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 206,
+      "offset": 772072,
+      "size": 35,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 207,
+      "offset": 772112,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 208,
+      "offset": 772160,
+      "size": 39,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 209,
+      "offset": 772200,
+      "size": 43,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 210,
+      "offset": 772248,
+      "size": 47,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 211,
+      "offset": 772296,
+      "size": 59,
+      "type_id": 1,
+      "class_id": 1,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 212,
+      "offset": 772360,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 213,
+      "offset": 772424,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 214,
+      "offset": 772488,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 215,
+      "offset": 772552,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 216,
+      "offset": 772616,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 217,
+      "offset": 772680,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 218,
+      "offset": 772744,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 219,
+      "offset": 772808,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 220,
+      "offset": 772872,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 221,
+      "offset": 772944,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 222,
+      "offset": 773016,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 223,
+      "offset": 773080,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 224,
+      "offset": 773160,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 225,
+      "offset": 773232,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 226,
+      "offset": 773304,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 227,
+      "offset": 773368,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 228,
+      "offset": 773432,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 229,
+      "offset": 773504,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 230,
+      "offset": 773568,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 231,
+      "offset": 773632,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 232,
+      "offset": 773696,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 233,
+      "offset": 773760,
+      "size": 100,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 234,
+      "offset": 773864,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 235,
+      "offset": 773936,
+      "size": 84,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 236,
+      "offset": 774024,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 237,
+      "offset": 774088,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 238,
+      "offset": 774152,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 239,
+      "offset": 774224,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 240,
+      "offset": 774304,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 241,
+      "offset": 774376,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 242,
+      "offset": 774456,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 243,
+      "offset": 774520,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 244,
+      "offset": 774584,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 245,
+      "offset": 774664,
+      "size": 84,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 246,
+      "offset": 774752,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 247,
+      "offset": 774816,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 248,
+      "offset": 774888,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 249,
+      "offset": 774968,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 250,
+      "offset": 775032,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 251,
+      "offset": 775096,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 252,
+      "offset": 775176,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 253,
+      "offset": 775248,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 254,
+      "offset": 775328,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 255,
+      "offset": 775400,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 256,
+      "offset": 775464,
+      "size": 84,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 257,
+      "offset": 775552,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 258,
+      "offset": 775616,
+      "size": 92,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 259,
+      "offset": 775712,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 260,
+      "offset": 775784,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 261,
+      "offset": 775856,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 262,
+      "offset": 775928,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 263,
+      "offset": 776000,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 264,
+      "offset": 776072,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 265,
+      "offset": 776136,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 266,
+      "offset": 776208,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 267,
+      "offset": 776280,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 268,
+      "offset": 776352,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 269,
+      "offset": 776424,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 270,
+      "offset": 776488,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 271,
+      "offset": 776552,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 272,
+      "offset": 776616,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 273,
+      "offset": 776688,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 274,
+      "offset": 776768,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 275,
+      "offset": 776840,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 276,
+      "offset": 776912,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 277,
+      "offset": 776976,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 278,
+      "offset": 777048,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 279,
+      "offset": 777120,
+      "size": 84,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 280,
+      "offset": 777208,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 281,
+      "offset": 777288,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 282,
+      "offset": 777352,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 283,
+      "offset": 777424,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 284,
+      "offset": 777496,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 285,
+      "offset": 777576,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 286,
+      "offset": 777656,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 287,
+      "offset": 777728,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 288,
+      "offset": 777800,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 289,
+      "offset": 777864,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 290,
+      "offset": 777928,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 291,
+      "offset": 777992,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 292,
+      "offset": 778056,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 293,
+      "offset": 778128,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 294,
+      "offset": 778208,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 295,
+      "offset": 778280,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 296,
+      "offset": 778360,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 297,
+      "offset": 778424,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 298,
+      "offset": 778504,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 299,
+      "offset": 778576,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 300,
+      "offset": 778656,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 301,
+      "offset": 778728,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 302,
+      "offset": 778800,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 303,
+      "offset": 778880,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 304,
+      "offset": 778944,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 305,
+      "offset": 779016,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 306,
+      "offset": 779088,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 307,
+      "offset": 779160,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 308,
+      "offset": 779224,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 309,
+      "offset": 779296,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 310,
+      "offset": 779368,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 311,
+      "offset": 779440,
+      "size": 92,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 312,
+      "offset": 779536,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 313,
+      "offset": 779600,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 314,
+      "offset": 779672,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 315,
+      "offset": 779736,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 316,
+      "offset": 779808,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 317,
+      "offset": 779872,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 318,
+      "offset": 779944,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 319,
+      "offset": 780016,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 320,
+      "offset": 780080,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 321,
+      "offset": 780152,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 322,
+      "offset": 780224,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 323,
+      "offset": 780288,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 324,
+      "offset": 780360,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 325,
+      "offset": 780432,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 326,
+      "offset": 780496,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 327,
+      "offset": 780568,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 328,
+      "offset": 780640,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 329,
+      "offset": 780712,
+      "size": 92,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 330,
+      "offset": 780808,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 331,
+      "offset": 780880,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 332,
+      "offset": 780944,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 333,
+      "offset": 781008,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 334,
+      "offset": 781072,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 335,
+      "offset": 781136,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 336,
+      "offset": 781200,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 337,
+      "offset": 781264,
+      "size": 76,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 338,
+      "offset": 781344,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 339,
+      "offset": 781408,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 340,
+      "offset": 781472,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 341,
+      "offset": 781536,
+      "size": 60,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 342,
+      "offset": 781600,
+      "size": 68,
+      "type_id": 4,
+      "class_id": 4,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 343,
+      "offset": 781672,
+      "size": 72,
+      "type_id": 23,
+      "class_id": 23,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 344,
+      "offset": 781744,
+      "size": 72,
+      "type_id": 23,
+      "class_id": 23,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 345,
+      "offset": 781816,
+      "size": 72,
+      "type_id": 23,
+      "class_id": 23,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 346,
+      "offset": 781888,
+      "size": 72,
+      "type_id": 23,
+      "class_id": 23,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 347,
+      "offset": 781960,
+      "size": 16,
+      "type_id": 33,
+      "class_id": 33,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 348,
+      "offset": 781976,
+      "size": 16,
+      "type_id": 33,
+      "class_id": 33,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 349,
+      "offset": 781992,
+      "size": 16,
+      "type_id": 33,
+      "class_id": 33,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 350,
+      "offset": 782008,
+      "size": 32,
+      "type_id": 54,
+      "class_id": 54,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 351,
+      "offset": 782040,
+      "size": 32,
+      "type_id": 54,
+      "class_id": 54,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 352,
+      "offset": 782072,
+      "size": 44,
+      "type_id": 65,
+      "class_id": 65,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 353,
+      "offset": 782120,
+      "size": 196,
+      "type_id": 82,
+      "class_id": 82,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 354,
+      "offset": 782320,
+      "size": 180,
+      "type_id": 82,
+      "class_id": 82,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 355,
+      "offset": 782504,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 356,
+      "offset": 782552,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 357,
+      "offset": 782600,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 358,
+      "offset": 782648,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 359,
+      "offset": 782696,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 360,
+      "offset": 782744,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 361,
+      "offset": 782792,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 362,
+      "offset": 782840,
+      "size": 42,
+      "type_id": 95,
+      "class_id": 95,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 363,
+      "offset": 782888,
+      "size": 66,
+      "type_id": 132,
+      "class_id": 132,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 364,
+      "offset": 782960,
+      "size": 148,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 365,
+      "offset": 783112,
+      "size": 188,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 366,
+      "offset": 783304,
+      "size": 188,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 367,
+      "offset": 783496,
+      "size": 140,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 368,
+      "offset": 783640,
+      "size": 148,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 369,
+      "offset": 783792,
+      "size": 140,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 370,
+      "offset": 783936,
+      "size": 140,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 371,
+      "offset": 784080,
+      "size": 188,
+      "type_id": 137,
+      "class_id": 137,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 372,
+      "offset": 784272,
+      "size": 2648,
+      "type_id": 198,
+      "class_id": 198,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 373,
+      "offset": 786920,
+      "size": 2920,
+      "type_id": 198,
+      "class_id": 198,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 374,
+      "offset": 789840,
+      "size": 2552,
+      "type_id": 198,
+      "class_id": 198,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 375,
+      "offset": 792392,
+      "size": 2616,
+      "type_id": 198,
+      "class_id": 198,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 376,
+      "offset": 795008,
+      "size": 2712,
+      "type_id": 198,
+      "class_id": 198,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 377,
+      "offset": 797720,
+      "size": 136,
+      "type_id": 199,
+      "class_id": 199,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 378,
+      "offset": 797856,
+      "size": 136,
+      "type_id": 199,
+      "class_id": 199,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 379,
+      "offset": 797992,
+      "size": 136,
+      "type_id": 199,
+      "class_id": 199,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 380,
+      "offset": 798128,
+      "size": 136,
+      "type_id": 199,
+      "class_id": 199,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 381,
+      "offset": 798264,
+      "size": 136,
+      "type_id": 199,
+      "class_id": 199,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 382,
+      "offset": 798400,
+      "size": 4224,
+      "type_id": -1,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 383,
+      "offset": 802624,
+      "size": 108,
+      "type_id": -2,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 384,
+      "offset": 802736,
+      "size": 256,
+      "type_id": -3,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 385,
+      "offset": 802992,
+      "size": 64,
+      "type_id": -4,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 386,
+      "offset": 803056,
+      "size": 208,
+      "type_id": -5,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 387,
+      "offset": 803264,
+      "size": 388,
+      "type_id": -6,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 388,
+      "offset": 803656,
+      "size": 116,
+      "type_id": -6,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 389,
+      "offset": 803776,
+      "size": 492,
+      "type_id": -7,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 390,
+      "offset": 804272,
+      "size": 232,
+      "type_id": -8,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 391,
+      "offset": 804504,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 392,
+      "offset": 804568,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 393,
+      "offset": 804632,
+      "size": 112,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 394,
+      "offset": 804744,
+      "size": 48,
+      "type_id": -11,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 395,
+      "offset": 804792,
+      "size": 56,
+      "type_id": -12,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 396,
+      "offset": 804848,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 397,
+      "offset": 804912,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 398,
+      "offset": 804976,
+      "size": 100,
+      "type_id": -13,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 399,
+      "offset": 805080,
+      "size": 96,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 400,
+      "offset": 805176,
+      "size": 120,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 401,
+      "offset": 805296,
+      "size": 244,
+      "type_id": -14,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 402,
+      "offset": 805544,
+      "size": 204,
+      "type_id": -15,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 403,
+      "offset": 805752,
+      "size": 48,
+      "type_id": -15,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 404,
+      "offset": 805800,
+      "size": 108,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 405,
+      "offset": 805912,
+      "size": 108,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 406,
+      "offset": 806024,
+      "size": 112,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 407,
+      "offset": 806136,
+      "size": 216,
+      "type_id": -8,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 408,
+      "offset": 806352,
+      "size": 244,
+      "type_id": -14,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 409,
+      "offset": 806600,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 410,
+      "offset": 806664,
+      "size": 64,
+      "type_id": -16,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 411,
+      "offset": 806728,
+      "size": 260,
+      "type_id": -17,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 412,
+      "offset": 806992,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 413,
+      "offset": 807056,
+      "size": 28,
+      "type_id": -18,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 414,
+      "offset": 807088,
+      "size": 412,
+      "type_id": -19,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 415,
+      "offset": 807504,
+      "size": 696,
+      "type_id": -20,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 416,
+      "offset": 808200,
+      "size": 52,
+      "type_id": -21,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 417,
+      "offset": 808256,
+      "size": 68,
+      "type_id": -22,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 418,
+      "offset": 808328,
+      "size": 60,
+      "type_id": -23,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 419,
+      "offset": 808392,
+      "size": 52,
+      "type_id": -21,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 420,
+      "offset": 808448,
+      "size": 84,
+      "type_id": -24,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 421,
+      "offset": 808536,
+      "size": 112,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 422,
+      "offset": 808648,
+      "size": 80,
+      "type_id": -25,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 423,
+      "offset": 808728,
+      "size": 68,
+      "type_id": -26,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 424,
+      "offset": 808800,
+      "size": 160,
+      "type_id": -27,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 425,
+      "offset": 808960,
+      "size": 400,
+      "type_id": -28,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 426,
+      "offset": 809360,
+      "size": 4636,
+      "type_id": -29,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 427,
+      "offset": 814000,
+      "size": 52,
+      "type_id": -30,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 428,
+      "offset": 814056,
+      "size": 56,
+      "type_id": -31,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 429,
+      "offset": 814112,
+      "size": 132,
+      "type_id": -32,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 430,
+      "offset": 814248,
+      "size": 44,
+      "type_id": -33,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 431,
+      "offset": 814296,
+      "size": 1184,
+      "type_id": -34,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 432,
+      "offset": 815480,
+      "size": 36,
+      "type_id": -35,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 433,
+      "offset": 815520,
+      "size": 32,
+      "type_id": -36,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 434,
+      "offset": 815552,
+      "size": 28,
+      "type_id": -18,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 435,
+      "offset": 815584,
+      "size": 28,
+      "type_id": -18,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 436,
+      "offset": 815616,
+      "size": 28,
+      "type_id": -18,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 437,
+      "offset": 815648,
+      "size": 28,
+      "type_id": -18,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 438,
+      "offset": 815680,
+      "size": 60,
+      "type_id": -37,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 439,
+      "offset": 815744,
+      "size": 64,
+      "type_id": -9,
+      "class_id": 114,
+      "is_destroyed": 0
+    },
+    {
+      "object_id": 440,
+      "offset": 815808,
+      "size": 116,
+      "type_id": -10,
+      "class_id": 114,
+      "is_destroyed": 0
+    }
+  ],
+  "number_of_object_references": 6,
+  "object_reference_offset": 231930,
+  "object_references": [
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "resources/unity_builtin_extra"
+    },
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "library/unity default resources"
+    },
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "cab-57358edcc2302cf44af91f5634c241c1"
+    },
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "cab-a501f7c96871a8646bae1df47d627dde"
+    },
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "cab-8a1f336110325b34ba14545baf685ace"
+    },
+    {
+      "asset_path": "",
+      "type_id": 0,
+      "file_path": "cab-14f5a73342971f44ab8f6cbcacaa3d20"
+    }
+  ],
+  "identifier": ""
+}
