@@ -1,0 +1,2247 @@
+{
+  "type": "MonoBehaviour",
+  "name": "Base",
+  "size": -1,
+  "index": 0,
+  "is_array": 0,
+  "version": 1,
+  "flags": 32768,
+  "number_of_fields": 160,
+  "children": [
+    {
+      "type": "PPtr<GameObject>",
+      "name": "m_GameObject",
+      "size": 8,
+      "index": 1,
+      "is_array": 0,
+      "version": 1,
+      "flags": 65601,
+      "number_of_fields": 2,
+      "children": [
+        {
+          "type": "int",
+          "name": "m_FileID",
+          "size": 4,
+          "index": 2,
+          "is_array": 0,
+          "version": 1,
+          "flags": 65601,
+          "number_of_fields": 0,
+          "children": []
+        },
+        {
+          "type": "int",
+          "name": "m_PathID",
+          "size": 4,
+          "index": 3,
+          "is_array": 0,
+          "version": 1,
+          "flags": 65601,
+          "number_of_fields": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "UInt8",
+      "name": "m_Enabled",
+      "size": 1,
+      "index": 4,
+      "is_array": 0,
+      "version": 1,
+      "flags": 16641,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "PPtr<MonoScript>",
+      "name": "m_Script",
+      "size": 8,
+      "index": 5,
+      "is_array": 0,
+      "version": 1,
+      "flags": 0,
+      "number_of_fields": 2,
+      "children": [
+        {
+          "type": "int",
+          "name": "m_FileID",
+          "size": 4,
+          "index": 6,
+          "is_array": 0,
+          "version": 1,
+          "flags": 1,
+          "number_of_fields": 0,
+          "children": []
+        },
+        {
+          "type": "int",
+          "name": "m_PathID",
+          "size": 4,
+          "index": 7,
+          "is_array": 0,
+          "version": 1,
+          "flags": 1,
+          "number_of_fields": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "m_Name",
+      "size": -1,
+      "index": 8,
+      "is_array": 0,
+      "version": 1,
+      "flags": 32769,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 9,
+          "is_array": 1,
+          "version": 1,
+          "flags": 16385,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 10,
+              "is_array": 0,
+              "version": 1,
+              "flags": 1,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "char",
+              "name": "data",
+              "size": 1,
+              "index": 11,
+              "is_array": 0,
+              "version": 1,
+              "flags": 1,
+              "number_of_fields": 0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "CharacterDatabaseString",
+      "name": "DisplayName",
+      "size": -1,
+      "index": 12,
+      "is_array": 0,
+      "version": 1,
+      "flags": 34816,
+      "number_of_fields": 3,
+      "children": [
+        {
+          "type": "int",
+          "name": "StringTable",
+          "size": 4,
+          "index": 13,
+          "is_array": 0,
+          "version": 1,
+          "flags": 2048,
+          "number_of_fields": 0,
+          "children": []
+        },
+        {
+          "type": "int",
+          "name": "StringID",
+          "size": 4,
+          "index": 14,
+          "is_array": 0,
+          "version": 1,
+          "flags": 2048,
+          "number_of_fields": 0,
+          "children": []
+        },
+        {
+          "type": "string",
+          "name": "CharacterGuid",
+          "size": -1,
+          "index": 15,
+          "is_array": 0,
+          "version": 1,
+          "flags": 34816,
+          "number_of_fields": 1,
+          "children": [
+            {
+              "type": "Array",
+              "name": "Array",
+              "size": -1,
+              "index": 16,
+              "is_array": 1,
+              "version": 1,
+              "flags": 18433,
+              "number_of_fields": 2,
+              "children": [
+                {
+                  "type": "int",
+                  "name": "size",
+                  "size": 4,
+                  "index": 17,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                },
+                {
+                  "type": "char",
+                  "name": "data",
+                  "size": 1,
+                  "index": 18,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "string",
+      "name": "OverrideName",
+      "size": -1,
+      "index": 19,
+      "is_array": 0,
+      "version": 1,
+      "flags": 34817,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 20,
+          "is_array": 1,
+          "version": 1,
+          "flags": 18433,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 21,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "char",
+              "name": "data",
+              "size": 1,
+              "index": 22,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "Gender",
+      "size": 4,
+      "index": 23,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CharacterRace",
+      "size": 4,
+      "index": 24,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CharacterSubrace",
+      "size": 4,
+      "index": 25,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "RacialBodyType",
+      "size": 4,
+      "index": 26,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CharacterCulture",
+      "size": 4,
+      "index": 27,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CharacterClass",
+      "size": 4,
+      "index": 28,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "Deity",
+      "size": 4,
+      "index": 29,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PaladinOrder",
+      "size": 4,
+      "index": 30,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CharacterBackground",
+      "size": 4,
+      "index": 31,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "string",
+      "name": "Keywords",
+      "size": -1,
+      "index": 32,
+      "is_array": 0,
+      "version": 1,
+      "flags": 34816,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 33,
+          "is_array": 1,
+          "version": 1,
+          "flags": 18433,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 34,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "char",
+              "name": "data",
+              "size": 1,
+              "index": 35,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 0,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "int",
+      "name": "Level",
+      "size": 4,
+      "index": 36,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "RemainingSkillPoints",
+      "size": 4,
+      "index": 37,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseMight",
+      "size": 4,
+      "index": 38,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseConstitution",
+      "size": 4,
+      "index": 39,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseDexterity",
+      "size": 4,
+      "index": 40,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BasePerception",
+      "size": 4,
+      "index": 41,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseIntellect",
+      "size": 4,
+      "index": 42,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseResolve",
+      "size": 4,
+      "index": 43,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "ResolveBonus",
+      "size": 4,
+      "index": 44,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "MightBonus",
+      "size": 4,
+      "index": 45,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DexterityBonus",
+      "size": 4,
+      "index": 46,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "IntellectBonus",
+      "size": 4,
+      "index": 47,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "ConstitutionBonus",
+      "size": 4,
+      "index": 48,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PerceptionBonus",
+      "size": 4,
+      "index": 49,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "AthleticsSkill",
+      "size": 4,
+      "index": 50,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "LoreSkill",
+      "size": 4,
+      "index": 51,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "MechanicsSkill",
+      "size": 4,
+      "index": 52,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "SurvivalSkill",
+      "size": 4,
+      "index": 53,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "StealthSkill",
+      "size": 4,
+      "index": 54,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CraftingSkill",
+      "size": 4,
+      "index": 55,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "OverrideSurvivalSkillLevel",
+      "size": 4,
+      "index": 56,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "UInt8",
+      "name": "ImmuneToEngagement",
+      "size": 1,
+      "index": 57,
+      "is_array": 0,
+      "version": 1,
+      "flags": 18688,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "StealthBonus",
+      "size": 4,
+      "index": 58,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "AthleticsBonus",
+      "size": 4,
+      "index": 59,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "LoreBonus",
+      "size": 4,
+      "index": 60,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "MechanicsBonus",
+      "size": 4,
+      "index": 61,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "SurvivalBonus",
+      "size": 4,
+      "index": 62,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "CraftingBonus",
+      "size": 4,
+      "index": 63,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "PPtr<$BestiaryReference>",
+      "name": "BestiaryReference",
+      "size": 8,
+      "index": 64,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 2,
+      "children": [
+        {
+          "type": "int",
+          "name": "m_FileID",
+          "size": 4,
+          "index": 65,
+          "is_array": 0,
+          "version": 1,
+          "flags": 2049,
+          "number_of_fields": 0,
+          "children": []
+        },
+        {
+          "type": "int",
+          "name": "m_PathID",
+          "size": 4,
+          "index": 66,
+          "is_array": 0,
+          "version": 1,
+          "flags": 2049,
+          "number_of_fields": 0,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "float",
+      "name": "MaxHealth",
+      "size": 4,
+      "index": 67,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MaxStamina",
+      "size": 4,
+      "index": 68,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "StaminaBonus",
+      "size": 4,
+      "index": 69,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "StaminaRechargeBonus",
+      "size": 4,
+      "index": 70,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "StaminaRechargeMult",
+      "size": 4,
+      "index": 71,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "HealthStaminaPerLevel",
+      "size": 4,
+      "index": 72,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ClassHealthMultiplier",
+      "size": 4,
+      "index": 73,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PerceptionType",
+      "size": 4,
+      "index": 74,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "MeleeAccuracyBonus",
+      "size": 4,
+      "index": 75,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "RangedAccuracyBonus",
+      "size": 4,
+      "index": 76,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "VesselAccuracyBonus",
+      "size": 4,
+      "index": 77,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BeastAccuracyBonus",
+      "size": 4,
+      "index": 78,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "WilderAccuracyBonus",
+      "size": 4,
+      "index": 79,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PrimordialAccuracyBonus",
+      "size": 4,
+      "index": 80,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "FlankedAccuracyBonus",
+      "size": 4,
+      "index": 81,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseDeflection",
+      "size": 4,
+      "index": 82,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseFortitude",
+      "size": 4,
+      "index": 83,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseReflexes",
+      "size": 4,
+      "index": 84,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BaseWill",
+      "size": 4,
+      "index": 85,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "VeilDeflectionBonus",
+      "size": 4,
+      "index": 86,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "KnockdownDefenseBonus",
+      "size": 4,
+      "index": 87,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "StunDefenseBonus",
+      "size": 4,
+      "index": 88,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PoisonDefenseBonus",
+      "size": 4,
+      "index": 89,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DiseaseDefenseBonus",
+      "size": 4,
+      "index": 90,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "PushDefenseBonus",
+      "size": 4,
+      "index": 91,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "WhileKnockeddownDefenseBonus",
+      "size": 4,
+      "index": 92,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "WhileStunnedDefenseBonus",
+      "size": 4,
+      "index": 93,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BonusShieldDeflection",
+      "size": 4,
+      "index": 94,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "UInt8",
+      "name": "EvadeEverything",
+      "size": 1,
+      "index": 95,
+      "is_array": 0,
+      "version": 1,
+      "flags": 18689,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "NearestAllyWithSharedTargetAccuracyBonus",
+      "size": 4,
+      "index": 96,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "PotionEffectiveness",
+      "size": 4,
+      "index": 97,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "TrapAccuracyBonus",
+      "size": 4,
+      "index": 98,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "TrapDamageOrDurationMult",
+      "size": 4,
+      "index": 99,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "EngageableEnemyCount",
+      "size": 4,
+      "index": 100,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EngagementDistanceBonus",
+      "size": 4,
+      "index": 101,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DisengagementAccuracyBonus",
+      "size": 4,
+      "index": 102,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DisengagementDefenseBonus",
+      "size": 4,
+      "index": 103,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "UInt8",
+      "name": "ImmuneToEngageStop",
+      "size": 1,
+      "index": 104,
+      "is_array": 0,
+      "version": 1,
+      "flags": 18689,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "AttackSpeedMultiplier",
+      "size": 4,
+      "index": 105,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "DualWieldAttackSpeedMultiplier",
+      "size": 4,
+      "index": 106,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MeleeAttackSpeedMultiplier",
+      "size": 4,
+      "index": 107,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "RangedAttackSpeedMultiplier",
+      "size": 4,
+      "index": 108,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "RateOfFireMultiplier",
+      "size": 4,
+      "index": 109,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ReloadSpeedMultiplier",
+      "size": 4,
+      "index": 110,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MeleeAttackDistanceMultiplier",
+      "size": 4,
+      "index": 111,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "RangedAttackDistanceMultiplier",
+      "size": 4,
+      "index": 112,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "DamageMinBonus",
+      "size": 4,
+      "index": 113,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "WeaponDamageMinMult",
+      "size": 4,
+      "index": 114,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusRangedWeaponCloseEnemyDamageMult",
+      "size": 4,
+      "index": 115,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusDTFromArmor",
+      "size": 4,
+      "index": 116,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "DTBypass",
+      "size": 4,
+      "index": 117,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MeleeDTBypass",
+      "size": 4,
+      "index": 118,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "RangedDTBypass",
+      "size": 4,
+      "index": 119,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MeleeDamageRangePctIncreaseToMin",
+      "size": 4,
+      "index": 120,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyCritToHitPercent",
+      "size": 4,
+      "index": 121,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyHitToGrazePercent",
+      "size": 4,
+      "index": 122,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyReflexGrazeToMissPercent",
+      "size": 4,
+      "index": 123,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyReflexHitToGrazePercent",
+      "size": 4,
+      "index": 124,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyGrazeToMissPercent",
+      "size": 4,
+      "index": 125,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyDeflectReflexHitToGrazePercent",
+      "size": 4,
+      "index": 126,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "EnemyFortitudeWillHitToGrazePercent",
+      "size": 4,
+      "index": 127,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusGrazeToHitPercent",
+      "size": 4,
+      "index": 128,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusGrazeToMissPercent",
+      "size": 4,
+      "index": 129,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusGrazeToHitPercentMeleeOneHanded",
+      "size": 4,
+      "index": 130,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHitToCritPercentMeleeOneHanded",
+      "size": 4,
+      "index": 131,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusCritToHitPercent",
+      "size": 4,
+      "index": 132,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusMissToGrazePercent",
+      "size": 4,
+      "index": 133,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHitToCritPercent",
+      "size": 4,
+      "index": 134,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHitToCritPercentAll",
+      "size": 4,
+      "index": 135,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHitToCritPercentEnemyBelow10Percent",
+      "size": 4,
+      "index": 136,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHitToGrazePercent",
+      "size": 4,
+      "index": 137,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "ExtraStraightBounces",
+      "size": 4,
+      "index": 138,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "HostileEffectDurationMultiplier",
+      "size": 4,
+      "index": 139,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "HostileAOEDamageMultiplier",
+      "size": 4,
+      "index": 140,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "CritHitDamageMultiplierBonus",
+      "size": 4,
+      "index": 141,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "CritHitDamageMultiplierBonusEnemyBelow10Percent",
+      "size": 4,
+      "index": 142,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "ImprovedFlanking",
+      "size": 4,
+      "index": 143,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "AttackerToHitRollOverride",
+      "size": 4,
+      "index": 144,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "EnemiesNeededToFlank",
+      "size": 4,
+      "index": 145,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DeathPrevented",
+      "size": 4,
+      "index": 146,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "CurrentGrimoireCooldown",
+      "size": 4,
+      "index": 147,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "GrimoireCooldownBonus",
+      "size": 4,
+      "index": 148,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "WeaponSwitchCooldownBonus",
+      "size": 4,
+      "index": 149,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "DOTTickMult",
+      "size": 4,
+      "index": 150,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "WoundDelay",
+      "size": 4,
+      "index": 151,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "FinishingBlowDamageMult",
+      "size": 4,
+      "index": 152,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ZealousAuraRadiusMult",
+      "size": 4,
+      "index": 153,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "UnconsciousnessDelayed",
+      "size": 4,
+      "index": 154,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "NegMoveTickMult",
+      "size": 4,
+      "index": 155,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "FocusGainMult",
+      "size": 4,
+      "index": 156,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "SpellDefenseBonus",
+      "size": 4,
+      "index": 157,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "RangedDeflectionBonus",
+      "size": 4,
+      "index": 158,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "TwoHandedDeflectionBonus",
+      "size": 4,
+      "index": 159,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BonusUsesPerRestPastThree",
+      "size": 4,
+      "index": 160,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "PoisonTickMult",
+      "size": 4,
+      "index": 161,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "DiseaseTickMult",
+      "size": 4,
+      "index": 162,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "StalkersLinkDamageMult",
+      "size": 4,
+      "index": 163,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ChanterPhraseRadiusMult",
+      "size": 4,
+      "index": 164,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHealMult",
+      "size": 4,
+      "index": 165,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "BonusHealingGivenMult",
+      "size": 4,
+      "index": 166,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "AoERadiusMult",
+      "size": 4,
+      "index": 167,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "WildstrikeDamageMult",
+      "size": 4,
+      "index": 168,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "MaxStaminaMultiplier",
+      "size": 4,
+      "index": 169,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ArmorSpeedFactorAdj",
+      "size": 4,
+      "index": 170,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "SingleWeaponSpeedFactorAdj",
+      "size": 4,
+      "index": 171,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "RangedMovingRecoveryReductionPct",
+      "size": 4,
+      "index": 172,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "float",
+      "name": "ExtraSimultaneousHitDefenseBonus",
+      "size": 4,
+      "index": 173,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BonusWeaponSets",
+      "size": 4,
+      "index": 174,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "BonusQuickSlots",
+      "size": 4,
+      "index": 175,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "int",
+      "name": "DefensiveBondBonus",
+      "size": 4,
+      "index": 176,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "UInt8",
+      "name": "NegateNextRecovery",
+      "size": 1,
+      "index": 177,
+      "is_array": 0,
+      "version": 1,
+      "flags": 18689,
+      "number_of_fields": 0,
+      "children": []
+    },
+    {
+      "type": "vector",
+      "name": "Abilities",
+      "size": -1,
+      "index": 178,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 179,
+          "is_array": 1,
+          "version": 1,
+          "flags": 2048,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 180,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "PPtr<$GenericAbility>",
+              "name": "data",
+              "size": 8,
+              "index": 181,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 2,
+              "children": [
+                {
+                  "type": "int",
+                  "name": "m_FileID",
+                  "size": 4,
+                  "index": 182,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                },
+                {
+                  "type": "int",
+                  "name": "m_PathID",
+                  "size": 4,
+                  "index": 183,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vector",
+      "name": "AfflictionImmunities",
+      "size": -1,
+      "index": 184,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 185,
+          "is_array": 1,
+          "version": 1,
+          "flags": 2048,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 186,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "PPtr<$Affliction>",
+              "name": "data",
+              "size": 8,
+              "index": 187,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 2,
+              "children": [
+                {
+                  "type": "int",
+                  "name": "m_FileID",
+                  "size": 4,
+                  "index": 188,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                },
+                {
+                  "type": "int",
+                  "name": "m_PathID",
+                  "size": 4,
+                  "index": 189,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vector",
+      "name": "Talents",
+      "size": -1,
+      "index": 190,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2048,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 191,
+          "is_array": 1,
+          "version": 1,
+          "flags": 2048,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 192,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "PPtr<$GenericTalent>",
+              "name": "data",
+              "size": 8,
+              "index": 193,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2048,
+              "number_of_fields": 2,
+              "children": [
+                {
+                  "type": "int",
+                  "name": "m_FileID",
+                  "size": 4,
+                  "index": 194,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                },
+                {
+                  "type": "int",
+                  "name": "m_PathID",
+                  "size": 4,
+                  "index": 195,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vector",
+      "name": "Flankers",
+      "size": -1,
+      "index": 196,
+      "is_array": 0,
+      "version": 1,
+      "flags": 2049,
+      "number_of_fields": 1,
+      "children": [
+        {
+          "type": "Array",
+          "name": "Array",
+          "size": -1,
+          "index": 197,
+          "is_array": 1,
+          "version": 1,
+          "flags": 2049,
+          "number_of_fields": 2,
+          "children": [
+            {
+              "type": "int",
+              "name": "size",
+              "size": 4,
+              "index": 198,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 0,
+              "children": []
+            },
+            {
+              "type": "PPtr<$CharacterStats>",
+              "name": "data",
+              "size": 8,
+              "index": 199,
+              "is_array": 0,
+              "version": 1,
+              "flags": 2049,
+              "number_of_fields": 2,
+              "children": [
+                {
+                  "type": "int",
+                  "name": "m_FileID",
+                  "size": 4,
+                  "index": 200,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                },
+                {
+                  "type": "int",
+                  "name": "m_PathID",
+                  "size": 4,
+                  "index": 201,
+                  "is_array": 0,
+                  "version": 1,
+                  "flags": 2049,
+                  "number_of_fields": 0,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

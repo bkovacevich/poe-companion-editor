@@ -134,6 +134,41 @@ describe('lib.companionAssetEditor', function() {
           expect(object_metadata).to.deep.equal(expected);
         });
     });
+  });
+
+  describe('#findCharicterSheetType', function() {
+    let asset_tree;
+    let expected;
+
+    beforeEach(function() {
+      let offset = 112;
+
+      return asset_editor.loadAssetTypeTree(offset)
+        .catch(function(err) {
+          expect(err).to.not.exist;
+        })
+        .then(function(result) {
+          asset_tree = result;
+        });
+    });
+
+    beforeEach(function(done) {
+      return fs.readFile('./tests/data/eder_sheet_type.json', (err, file_buffer) => {
+        expect(err).to.not.exist;
+
+        expected = JSON.parse(file_buffer.toString());
+
+        return done();
+      });
+    });
+
+    it('searches the asset type tree for the charicter sheet', function() {
+      let charicter_sheet_type = asset_editor.findCharicterSheetType(asset_tree);
+
+      expect(charicter_sheet_type).to.deep.equal(expected);
+    });
+  });
+
 
   });
 });
