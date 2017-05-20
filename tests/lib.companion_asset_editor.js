@@ -138,7 +138,7 @@ describe('lib.companionAssetEditor', function() {
 
   describe('#findCharicterSheetType', function() {
     let asset_tree;
-    let expected;
+    let expected_sheet_type;
 
     beforeEach(function() {
       let offset = 112;
@@ -156,7 +156,7 @@ describe('lib.companionAssetEditor', function() {
       return fs.readFile('./tests/data/eder_sheet_type.json', (err, file_buffer) => {
         expect(err).to.not.exist;
 
-        expected = JSON.parse(file_buffer.toString());
+        expected_sheet_type = JSON.parse(file_buffer.toString());
 
         return done();
       });
@@ -165,10 +165,48 @@ describe('lib.companionAssetEditor', function() {
     it('searches the asset type tree for the charicter sheet', function() {
       let charicter_sheet_type = asset_editor.findCharicterSheetType(asset_tree);
 
-      expect(charicter_sheet_type).to.deep.equal(expected);
+      expect(charicter_sheet_type).to.deep.equal({
+        sheet_type: expected_sheet_type,
+        type_id:    "-20",
+      });
     });
   });
 
+  describe('#findCharicterSheetObjectMetadata', function() {
+    let object_metadata;
+    let type_id;
+
+    beforeEach(function() {
+      type_id = "-20"
+    });
+
+    beforeEach(function() {
+      let number_of_objects  = 440;
+      let offset             = 223126;
+      let object_data_offset = 232160;
+      let is_long_ids        = false;
+
+      return asset_editor.loadObjectMetadata(number_of_objects, offset, object_data_offset, is_long_ids)
+        .catch(function(err) {
+          expect(err).to.not.exist();
+        })
+        .then(function(results) {
+          object_metadata = results;
+        });
+    });
+
+    it('gets the charicter sheet object metadata', function() {
+      let charicter_sheet_object = asset_editor.findCharicterSheetObjectMetadata(type_id, object_metadata);
+
+      expect(charicter_sheet_object).to.deep.equal({
+        object_id:     415,
+        offset:        807504,
+        size:          696,
+        type_id:       -20,
+        class_id:      114,
+        is_destroyed:  0,
+      });
+    });
 
   });
 });
