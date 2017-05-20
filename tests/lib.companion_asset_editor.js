@@ -17,6 +17,10 @@ describe('lib.companionAssetEditor', function() {
     it('sets the file name', function() {
       expect(asset_editor.file_name).to.equal(companion_file_name);
     });
+
+    it('initializes companion_data', function() {
+      expect(asset_editor.companion_data).to.deep.equal({});
+    });
   });
 
   describe('#parseHeader', function() {
