@@ -95,4 +95,41 @@ describe('lib.companionAssetEditor', function() {
         });
     });
   });
+
+  describe('#loadObjectInfo', function() {
+    let offset;
+    let number_of_objects;
+    let object_data_offset;
+    let is_long_ids;
+
+    let expected;
+
+    beforeEach(function() {
+      offset             = 223126;
+      number_of_objects  = 440;
+      is_long_ids        = false;
+      object_data_offset = 232160;
+    });
+
+    beforeEach(function(done) {
+      return fs.readFile('./tests/data/eder_object_metadata.json', (err, file_buffer) => {
+        expect(err).to.not.exist;
+
+        expected = JSON.parse(file_buffer.toString());
+
+        return done();
+      });
+    });
+
+    it('loads object info', function() {
+      return asset_editor.loadObjectMetadata(number_of_objects, offset, object_data_offset, is_long_ids)
+        .catch(function(err) {
+          expect(err).to.not.exist();
+        })
+        .then(function(object_metadata) {
+          expect(object_metadata).to.deep.equal(expected);
+        });
+    });
+
+  });
 });

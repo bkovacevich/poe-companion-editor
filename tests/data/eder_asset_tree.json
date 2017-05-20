@@ -7,7 +7,10 @@
     "version": "4.7.0f1",
     "platform_id": 5,
     "number_of_fields": 58,
-    "classes": {
+    "is_long_ids": 0,
+    "number_of_objects": 440,
+    "object_info_offset": 223126,
+    "types": {
         "1": {
             "type": "GameObject",
             "name": "Base",
