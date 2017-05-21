@@ -163,9 +163,9 @@ describe('CompanionAssetEditor', function() {
     });
 
     it('searches the asset type tree for the charicter sheet', function() {
-      let charicter_sheet_type = asset_editor.findCharicterSheetType(asset_tree);
+      let charicter_sheet_type = asset_editor.findCharicterSheetType();
 
-      expect(charicter_sheet_type.sheet_type).to.deep.equal(expected_sheet_type);
+      expect(charicter_sheet_type.type).to.deep.equal(expected_sheet_type);
 
       expect(charicter_sheet_type.type_id).to.deep.equal("-20");
     });

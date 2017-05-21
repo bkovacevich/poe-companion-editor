@@ -5,6 +5,18 @@ const Buffer      = require('buffer').Buffer;
 const AssetBuffer = require('../lib/companion_asset_editor/asset_buffer');
 
 describe('AssetBuffer', function() {
+  function helperDumpBuffer(asset_buffer) {
+    asset_buffer.moveTo(0);
+
+    let buffer_data = [];
+    while(asset_buffer.readOffset < 8) {
+      let data = asset_buffer.readInt32LE();
+      buffer_data.push(data);
+    }
+
+    return buffer_data;
+  }
+
   let asset_buffer;
   beforeEach(function() {
     let buffer = new Buffer(new Array(8).fill(0x01));
@@ -42,18 +54,6 @@ describe('AssetBuffer', function() {
   describe('#overwriteInt32LE', function() {
     let new_number;
     let offset;
-
-    function helperDumpBuffer(asset_buffer) {
-      asset_buffer.moveTo(0);
-
-      let buffer_data = [];
-      while(asset_buffer.readOffset < 8) {
-        let data = asset_buffer.readInt32LE();
-        buffer_data.push(data);
-      }
-
-      return buffer_data;
-    }
 
     beforeEach(function() {
       new_number = 0x0005;
@@ -98,6 +98,22 @@ describe('AssetBuffer', function() {
 
         expect(buffer_data).to.deep.equal([ 16843009, 5 ]);
       });
+    });
+  });
+
+  describe('.fromArray', function() {
+    let array;
+
+    beforeEach(function() {
+      array = [0x02, 0x00, 0x00, 0x00, 0x04, 0x00, 0x00, 0x00];
+    });
+
+    it('generates the buffer from the array data', function() {
+      let asset_buffer = AssetBuffer.fromArray(array);
+
+      let asset_buffer_data = helperDumpBuffer(asset_buffer);
+
+      expect(asset_buffer_data).to.deep.equal([2, 4]);
     });
   });
 });
