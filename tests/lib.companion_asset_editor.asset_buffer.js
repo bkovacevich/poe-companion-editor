@@ -2,7 +2,7 @@
 
 const expect      = require('chai').expect;
 const Buffer      = require('buffer').Buffer;
-const AssetBuffer = require('../lib/asset_buffer');
+const AssetBuffer = require('../lib/companion_asset_editor/asset_buffer');
 
 describe('AssetBuffer', function() {
   let asset_buffer;

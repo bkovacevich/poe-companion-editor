@@ -4,7 +4,7 @@ const expect               = require('chai').expect;
 const CompanionAssetEditor = require('../lib/companion_asset_editor');
 const fs                   = require('fs');
 
-describe('lib.companionAssetEditor', function() {
+describe('CompanionAssetEditor', function() {
   let companion_file_name;
   let asset_editor;
 
