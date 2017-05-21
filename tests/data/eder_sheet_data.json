@@ -1,0 +1,777 @@
+{
+  "value": {
+    "m_GameObject": {
+      "value": {
+        "m_FileID": {
+          "value": 0,
+          "offset": 0
+        },
+        "m_PathID": {
+          "value": 81,
+          "offset": 4
+        }
+      },
+      "offset": 0
+    },
+    "m_Enabled": {
+      "value": 1,
+      "offset": 8
+    },
+    "m_Script": {
+      "value": {
+        "m_FileID": {
+          "value": 0,
+          "offset": 12
+        },
+        "m_PathID": {
+          "value": 78,
+          "offset": 16
+        }
+      },
+      "offset": 12
+    },
+    "m_Name": {
+      "value": "",
+      "offset": 20
+    },
+    "DisplayName": {
+      "value": {
+        "StringTable": {
+          "value": 4,
+          "offset": 24
+        },
+        "StringID": {
+          "value": 13,
+          "offset": 28
+        },
+        "CharacterGuid": {
+          "value": "11bc67ef-10dc-4b95-b7bf-7bce71f9f881",
+          "offset": 32
+        }
+      },
+      "offset": 24
+    },
+    "OverrideName": {
+      "value": "",
+      "offset": 72
+    },
+    "Gender": {
+      "value": 0,
+      "offset": 76
+    },
+    "CharacterRace": {
+      "value": 1,
+      "offset": 80
+    },
+    "CharacterSubrace": {
+      "value": 1,
+      "offset": 84
+    },
+    "RacialBodyType": {
+      "value": 0,
+      "offset": 88
+    },
+    "CharacterCulture": {
+      "value": 8,
+      "offset": 92
+    },
+    "CharacterClass": {
+      "value": 1,
+      "offset": 96
+    },
+    "Deity": {
+      "value": 2,
+      "offset": 100
+    },
+    "PaladinOrder": {
+      "value": 0,
+      "offset": 104
+    },
+    "CharacterBackground": {
+      "value": 18,
+      "offset": 108
+    },
+    "Keywords": {
+      "value": "",
+      "offset": 112
+    },
+    "Level": {
+      "value": 7,
+      "offset": 116
+    },
+    "RemainingSkillPoints": {
+      "value": 0,
+      "offset": 120
+    },
+    "BaseMight": {
+      "value": 15,
+      "offset": 124
+    },
+    "BaseConstitution": {
+      "value": 16,
+      "offset": 128
+    },
+    "BaseDexterity": {
+      "value": 11,
+      "offset": 132
+    },
+    "BasePerception": {
+      "value": 12,
+      "offset": 136
+    },
+    "BaseIntellect": {
+      "value": 10,
+      "offset": 140
+    },
+    "BaseResolve": {
+      "value": 11,
+      "offset": 144
+    },
+    "ResolveBonus": {
+      "value": 0,
+      "offset": 148
+    },
+    "MightBonus": {
+      "value": 0,
+      "offset": 152
+    },
+    "DexterityBonus": {
+      "value": 0,
+      "offset": 156
+    },
+    "IntellectBonus": {
+      "value": 0,
+      "offset": 160
+    },
+    "ConstitutionBonus": {
+      "value": 0,
+      "offset": 164
+    },
+    "PerceptionBonus": {
+      "value": 0,
+      "offset": 168
+    },
+    "AthleticsSkill": {
+      "value": 0,
+      "offset": 172
+    },
+    "LoreSkill": {
+      "value": 0,
+      "offset": 176
+    },
+    "MechanicsSkill": {
+      "value": 0,
+      "offset": 180
+    },
+    "SurvivalSkill": {
+      "value": 0,
+      "offset": 184
+    },
+    "StealthSkill": {
+      "value": 0,
+      "offset": 188
+    },
+    "CraftingSkill": {
+      "value": 0,
+      "offset": 192
+    },
+    "OverrideSurvivalSkillLevel": {
+      "value": 0,
+      "offset": 196
+    },
+    "ImmuneToEngagement": {
+      "value": 0,
+      "offset": 200
+    },
+    "StealthBonus": {
+      "value": 0,
+      "offset": 204
+    },
+    "AthleticsBonus": {
+      "value": 0,
+      "offset": 208
+    },
+    "LoreBonus": {
+      "value": 0,
+      "offset": 212
+    },
+    "MechanicsBonus": {
+      "value": 0,
+      "offset": 216
+    },
+    "SurvivalBonus": {
+      "value": 0,
+      "offset": 220
+    },
+    "CraftingBonus": {
+      "value": 0,
+      "offset": 224
+    },
+    "BestiaryReference": {
+      "value": {
+        "m_FileID": {
+          "value": 0,
+          "offset": 228
+        },
+        "m_PathID": {
+          "value": 0,
+          "offset": 232
+        }
+      },
+      "offset": 228
+    },
+    "MaxHealth": {
+      "value": 62,
+      "offset": 236
+    },
+    "MaxStamina": {
+      "value": 62,
+      "offset": 240
+    },
+    "StaminaBonus": {
+      "value": 0,
+      "offset": 244
+    },
+    "StaminaRechargeBonus": {
+      "value": 0,
+      "offset": 248
+    },
+    "StaminaRechargeMult": {
+      "value": 1,
+      "offset": 252
+    },
+    "HealthStaminaPerLevel": {
+      "value": 8,
+      "offset": 256
+    },
+    "ClassHealthMultiplier": {
+      "value": 8,
+      "offset": 260
+    },
+    "PerceptionType": {
+      "value": 2,
+      "offset": 264
+    },
+    "MeleeAccuracyBonus": {
+      "value": 0,
+      "offset": 268
+    },
+    "RangedAccuracyBonus": {
+      "value": 0,
+      "offset": 272
+    },
+    "VesselAccuracyBonus": {
+      "value": 0,
+      "offset": 276
+    },
+    "BeastAccuracyBonus": {
+      "value": 0,
+      "offset": 280
+    },
+    "WilderAccuracyBonus": {
+      "value": 0,
+      "offset": 284
+    },
+    "PrimordialAccuracyBonus": {
+      "value": 0,
+      "offset": 288
+    },
+    "FlankedAccuracyBonus": {
+      "value": 0,
+      "offset": 292
+    },
+    "BaseDeflection": {
+      "value": 25,
+      "offset": 296
+    },
+    "BaseFortitude": {
+      "value": 15,
+      "offset": 300
+    },
+    "BaseReflexes": {
+      "value": 10,
+      "offset": 304
+    },
+    "BaseWill": {
+      "value": 10,
+      "offset": 308
+    },
+    "VeilDeflectionBonus": {
+      "value": 0,
+      "offset": 312
+    },
+    "KnockdownDefenseBonus": {
+      "value": 0,
+      "offset": 316
+    },
+    "StunDefenseBonus": {
+      "value": 0,
+      "offset": 320
+    },
+    "PoisonDefenseBonus": {
+      "value": 0,
+      "offset": 324
+    },
+    "DiseaseDefenseBonus": {
+      "value": 0,
+      "offset": 328
+    },
+    "PushDefenseBonus": {
+      "value": 0,
+      "offset": 332
+    },
+    "WhileKnockeddownDefenseBonus": {
+      "value": 0,
+      "offset": 336
+    },
+    "WhileStunnedDefenseBonus": {
+      "value": 0,
+      "offset": 340
+    },
+    "BonusShieldDeflection": {
+      "value": 0,
+      "offset": 344
+    },
+    "EvadeEverything": {
+      "value": 0,
+      "offset": 348
+    },
+    "NearestAllyWithSharedTargetAccuracyBonus": {
+      "value": 0,
+      "offset": 352
+    },
+    "PotionEffectiveness": {
+      "value": 1,
+      "offset": 356
+    },
+    "TrapAccuracyBonus": {
+      "value": 0,
+      "offset": 360
+    },
+    "TrapDamageOrDurationMult": {
+      "value": 1,
+      "offset": 364
+    },
+    "EngageableEnemyCount": {
+      "value": 1,
+      "offset": 368
+    },
+    "EngagementDistanceBonus": {
+      "value": 0,
+      "offset": 372
+    },
+    "DisengagementAccuracyBonus": {
+      "value": 5,
+      "offset": 376
+    },
+    "DisengagementDefenseBonus": {
+      "value": 0,
+      "offset": 380
+    },
+    "ImmuneToEngageStop": {
+      "value": 0,
+      "offset": 384
+    },
+    "AttackSpeedMultiplier": {
+      "value": 1,
+      "offset": 388
+    },
+    "DualWieldAttackSpeedMultiplier": {
+      "value": 1,
+      "offset": 392
+    },
+    "MeleeAttackSpeedMultiplier": {
+      "value": 1,
+      "offset": 396
+    },
+    "RangedAttackSpeedMultiplier": {
+      "value": 1,
+      "offset": 400
+    },
+    "RateOfFireMultiplier": {
+      "value": 1,
+      "offset": 404
+    },
+    "ReloadSpeedMultiplier": {
+      "value": 1,
+      "offset": 408
+    },
+    "MeleeAttackDistanceMultiplier": {
+      "value": 1,
+      "offset": 412
+    },
+    "RangedAttackDistanceMultiplier": {
+      "value": 1,
+      "offset": 416
+    },
+    "DamageMinBonus": {
+      "value": 0,
+      "offset": 420
+    },
+    "WeaponDamageMinMult": {
+      "value": 1,
+      "offset": 424
+    },
+    "BonusRangedWeaponCloseEnemyDamageMult": {
+      "value": 1,
+      "offset": 428
+    },
+    "BonusDTFromArmor": {
+      "value": 0,
+      "offset": 432
+    },
+    "DTBypass": {
+      "value": 0,
+      "offset": 436
+    },
+    "MeleeDTBypass": {
+      "value": 0,
+      "offset": 440
+    },
+    "RangedDTBypass": {
+      "value": 0,
+      "offset": 444
+    },
+    "MeleeDamageRangePctIncreaseToMin": {
+      "value": 0,
+      "offset": 448
+    },
+    "EnemyCritToHitPercent": {
+      "value": 0,
+      "offset": 452
+    },
+    "EnemyHitToGrazePercent": {
+      "value": 0,
+      "offset": 456
+    },
+    "EnemyReflexGrazeToMissPercent": {
+      "value": 0,
+      "offset": 460
+    },
+    "EnemyReflexHitToGrazePercent": {
+      "value": 0,
+      "offset": 464
+    },
+    "EnemyGrazeToMissPercent": {
+      "value": 0,
+      "offset": 468
+    },
+    "EnemyDeflectReflexHitToGrazePercent": {
+      "value": 0,
+      "offset": 472
+    },
+    "EnemyFortitudeWillHitToGrazePercent": {
+      "value": 0,
+      "offset": 476
+    },
+    "BonusGrazeToHitPercent": {
+      "value": 0,
+      "offset": 480
+    },
+    "BonusGrazeToMissPercent": {
+      "value": 0,
+      "offset": 484
+    },
+    "BonusGrazeToHitPercentMeleeOneHanded": {
+      "value": 0,
+      "offset": 488
+    },
+    "BonusHitToCritPercentMeleeOneHanded": {
+      "value": 0,
+      "offset": 492
+    },
+    "BonusCritToHitPercent": {
+      "value": 0,
+      "offset": 496
+    },
+    "BonusMissToGrazePercent": {
+      "value": 0,
+      "offset": 500
+    },
+    "BonusHitToCritPercent": {
+      "value": 0,
+      "offset": 504
+    },
+    "BonusHitToCritPercentAll": {
+      "value": 0,
+      "offset": 508
+    },
+    "BonusHitToCritPercentEnemyBelow10Percent": {
+      "value": 0,
+      "offset": 512
+    },
+    "BonusHitToGrazePercent": {
+      "value": 0,
+      "offset": 516
+    },
+    "ExtraStraightBounces": {
+      "value": 0,
+      "offset": 520
+    },
+    "HostileEffectDurationMultiplier": {
+      "value": 1,
+      "offset": 524
+    },
+    "HostileAOEDamageMultiplier": {
+      "value": 1,
+      "offset": 528
+    },
+    "CritHitDamageMultiplierBonus": {
+      "value": 0,
+      "offset": 532
+    },
+    "CritHitDamageMultiplierBonusEnemyBelow10Percent": {
+      "value": 0,
+      "offset": 536
+    },
+    "ImprovedFlanking": {
+      "value": 0,
+      "offset": 540
+    },
+    "AttackerToHitRollOverride": {
+      "value": -1,
+      "offset": 544
+    },
+    "EnemiesNeededToFlank": {
+      "value": 2,
+      "offset": 548
+    },
+    "DeathPrevented": {
+      "value": 0,
+      "offset": 552
+    },
+    "CurrentGrimoireCooldown": {
+      "value": 0,
+      "offset": 556
+    },
+    "GrimoireCooldownBonus": {
+      "value": 0,
+      "offset": 560
+    },
+    "WeaponSwitchCooldownBonus": {
+      "value": 0,
+      "offset": 564
+    },
+    "DOTTickMult": {
+      "value": 1,
+      "offset": 568
+    },
+    "WoundDelay": {
+      "value": 0,
+      "offset": 572
+    },
+    "FinishingBlowDamageMult": {
+      "value": 1,
+      "offset": 576
+    },
+    "ZealousAuraRadiusMult": {
+      "value": 1,
+      "offset": 580
+    },
+    "UnconsciousnessDelayed": {
+      "value": 0,
+      "offset": 584
+    },
+    "NegMoveTickMult": {
+      "value": 1,
+      "offset": 588
+    },
+    "FocusGainMult": {
+      "value": 1,
+      "offset": 592
+    },
+    "SpellDefenseBonus": {
+      "value": 0,
+      "offset": 596
+    },
+    "RangedDeflectionBonus": {
+      "value": 0,
+      "offset": 600
+    },
+    "TwoHandedDeflectionBonus": {
+      "value": 0,
+      "offset": 604
+    },
+    "BonusUsesPerRestPastThree": {
+      "value": 0,
+      "offset": 608
+    },
+    "PoisonTickMult": {
+      "value": 1,
+      "offset": 612
+    },
+    "DiseaseTickMult": {
+      "value": 1,
+      "offset": 616
+    },
+    "StalkersLinkDamageMult": {
+      "value": 1,
+      "offset": 620
+    },
+    "ChanterPhraseRadiusMult": {
+      "value": 1,
+      "offset": 624
+    },
+    "BonusHealMult": {
+      "value": 1,
+      "offset": 628
+    },
+    "BonusHealingGivenMult": {
+      "value": 1,
+      "offset": 632
+    },
+    "AoERadiusMult": {
+      "value": 1,
+      "offset": 636
+    },
+    "WildstrikeDamageMult": {
+      "value": 1,
+      "offset": 640
+    },
+    "MaxStaminaMultiplier": {
+      "value": 1,
+      "offset": 644
+    },
+    "ArmorSpeedFactorAdj": {
+      "value": 0,
+      "offset": 648
+    },
+    "SingleWeaponSpeedFactorAdj": {
+      "value": 0,
+      "offset": 652
+    },
+    "RangedMovingRecoveryReductionPct": {
+      "value": 0,
+      "offset": 656
+    },
+    "ExtraSimultaneousHitDefenseBonus": {
+      "value": 0,
+      "offset": 660
+    },
+    "BonusWeaponSets": {
+      "value": 0,
+      "offset": 664
+    },
+    "BonusQuickSlots": {
+      "value": 0,
+      "offset": 668
+    },
+    "DefensiveBondBonus": {
+      "value": 0,
+      "offset": 672
+    },
+    "NegateNextRecovery": {
+      "value": 0,
+      "offset": 676
+    },
+    "Abilities": {
+      "value": {
+        "Array": {
+          "value": {
+            "size": {
+              "value": 0,
+              "offset": 692
+            },
+            "data": {
+              "value": {
+                "m_FileID": {
+                  "value": 0,
+                  "offset": 696
+                },
+                "m_PathID": {
+                  "value": 89,
+                  "offset": 700
+                }
+              },
+              "offset": 696
+            }
+          },
+          "offset": 680
+        }
+      },
+      "offset": 680
+    },
+    "AfflictionImmunities": {
+      "value": {
+        "Array": {
+          "value": {
+            "size": {
+              "value": 0,
+              "offset": 716
+            },
+            "data": {
+              "value": {
+                "m_FileID": {
+                  "value": 0,
+                  "offset": 720
+                },
+                "m_PathID": {
+                  "value": 1090519040,
+                  "offset": 724
+                }
+              },
+              "offset": 720
+            }
+          },
+          "offset": 704
+        }
+      },
+      "offset": 704
+    },
+    "Talents": {
+      "value": {
+        "Array": {
+          "value": {
+            "size": {
+              "value": 0,
+              "offset": 740
+            },
+            "data": {
+              "value": {
+                "m_FileID": {
+                  "value": 2,
+                  "offset": 744
+                },
+                "m_PathID": {
+                  "value": 0,
+                  "offset": 748
+                }
+              },
+              "offset": 744
+            }
+          },
+          "offset": 728
+        }
+      },
+      "offset": 728
+    },
+    "Flankers": {
+      "value": {
+        "Array": {
+          "value": {
+            "size": {
+              "value": 0,
+              "offset": 764
+            },
+            "data": {
+              "value": {
+                "m_FileID": {
+                  "value": 69,
+                  "offset": 768
+                },
+                "m_PathID": {
+                  "value": 0,
+                  "offset": 772
+                }
+              },
+              "offset": 768
+            }
+          },
+          "offset": 752
+        }
+      },
+      "offset": 752
+    }
+  },
+  "offset": 0
+}
