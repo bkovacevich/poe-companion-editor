@@ -384,25 +384,5 @@ describe('AssetTypeTree', function() {
         },
       });
     });
-
-    context('when the type tree has not been loaded', function() {
-      beforeEach(function() {
-        delete asset_type_tree.type_tree;
-      });
-
-      beforeEach(function() {
-        sinon.stub(asset_type_tree, 'load').callsFake(function() {
-          this.type_tree = type_tree_data;
-        });
-      });
-      it('loads it', function() {
-        let found_type = asset_type_tree.findRootType({
-          type: 'fake-type',
-          name: 'fake-name',
-        });
-
-        expect(asset_type_tree.load).to.have.been.calledOnce;
-      });
-    });
   });
 });

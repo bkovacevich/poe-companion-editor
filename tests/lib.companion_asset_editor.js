@@ -27,7 +27,6 @@ describe('CompanionAssetEditor', function() {
     it('parses the header file', function() {
       return asset_editor.parseHeader()
         .catch(function (err) {
-          console.error('error:', err.message);
           expect(err).to.not.exist;
         })
         .then(function(header) {
@@ -126,9 +125,9 @@ describe('CompanionAssetEditor', function() {
     });
 
     it('loads object info', function() {
-      return asset_editor.loadObjectMetadata(number_of_objects, offset, object_data_offset, is_long_ids)
+      return asset_editor.loadObjectInfo(number_of_objects, offset, object_data_offset, is_long_ids)
         .catch(function(err) {
-          expect(err).to.not.exist();
+         expect(err).to.not.exist();
         })
         .then(function(object_metadata) {
           expect(object_metadata).to.deep.equal(expected);
@@ -139,9 +138,10 @@ describe('CompanionAssetEditor', function() {
   describe('#findCharicterSheetType', function() {
     let asset_tree;
     let expected_sheet_type;
+    let offset;
 
     beforeEach(function() {
-      let offset = 112;
+      offset = 112;
 
       return asset_editor.loadAssetTypeTree(offset)
         .catch(function(err) {
@@ -163,15 +163,18 @@ describe('CompanionAssetEditor', function() {
     });
 
     it('searches the asset type tree for the charicter sheet', function() {
-      let charicter_sheet_type = asset_editor.findCharicterSheetType();
-
-      expect(charicter_sheet_type.type).to.deep.equal(expected_sheet_type);
-
-      expect(charicter_sheet_type.type_id).to.deep.equal("-20");
+      return asset_editor.findCharicterSheetType(offset)
+        .catch(function(err) {
+          expect(err).to.not.exist();
+        })
+        .then(function(charicter_sheet_type) {
+          expect(charicter_sheet_type.type).to.deep.equal(expected_sheet_type);
+          expect(charicter_sheet_type.type_id).to.deep.equal("-20");
+        });
     });
   });
 
-  describe('#findCharicterSheetObjectMetadata', function() {
+  describe('#findCharicterSheetObjectInfo', function() {
     let object_metadata;
     let type_id;
 
@@ -182,20 +185,20 @@ describe('CompanionAssetEditor', function() {
     beforeEach(function() {
       let number_of_objects  = 440;
       let offset             = 223126;
-      let object_data_offset = 232160;
+      let object_data_offset = 232160 ;
       let is_long_ids        = false;
 
-      return asset_editor.loadObjectMetadata(number_of_objects, offset, object_data_offset, is_long_ids)
-        .catch(function(err) {
-          expect(err).to.not.exist();
-        })
+      return asset_editor.loadObjectInfo(number_of_objects, offset, object_data_offset, is_long_ids)
+        //.catch(function(err) {
+        //  expect(err).to.not.exist();
+        //})
         .then(function(results) {
           object_metadata = results;
         });
     });
 
     it('gets the charicter sheet object metadata', function() {
-      let charicter_sheet_object = asset_editor.findCharicterSheetObjectMetadata(type_id, object_metadata);
+      let charicter_sheet_object = asset_editor.findCharicterSheetObjectInfo(type_id, object_metadata);
 
       expect(charicter_sheet_object).to.deep.equal({
         object_id:               415,
@@ -213,29 +216,30 @@ describe('CompanionAssetEditor', function() {
   describe('#readObjectData', function() {
     let object_metadata;
     let type;
+    let type_id;
     let expected_sheet_data;
 
     beforeEach(function() {
       let offset = 112;
 
-      return asset_editor.loadAssetTypeTree(offset)
+      return asset_editor.findCharicterSheetType(offset)
         .catch(function(err) {
           expect(err).to.not.exist;
         })
-        .then(function(result) {
-          type = asset_editor.findCharicterSheetType(result);
-          return result;
+        .then(function(charicter_sheet_type) {
+          type    = charicter_sheet_type;
+          type_id = charicter_sheet_type.type_id;
         })
-        .then(function(type_tree) {
+        .then(function() {
           let number_of_objects  = 440;
           let offset             = 223126;
           let object_data_offset = 232160 + 112;
           let is_long_ids        = false;
 
-          return asset_editor.loadObjectMetadata(number_of_objects, offset, object_data_offset, is_long_ids)
+          return asset_editor.loadObjectInfo(number_of_objects, offset, object_data_offset, is_long_ids)
         })
         .then(function(results) {
-          object_metadata = asset_editor.findCharicterSheetObjectMetadata(-20, results);
+          object_metadata = asset_editor.findCharicterSheetObjectInfo(type_id, results);
         });
     });
 
@@ -250,12 +254,43 @@ describe('CompanionAssetEditor', function() {
     });
 
     it('reads the object data', function() {
-      asset_editor.readObject(object_metadata, type)
+      return asset_editor.readObject(object_metadata, type)
         .catch(function(err) {
-          expect(err).to.not.exist;
+          expect(err).to.not.exist();
         })
         .then(function(object_data) {
           expect(object_data).to.deep.equal(expected_sheet_data);
+        });
+    });
+  });
+
+  describe('#getCharicterSheet', function() {
+    it('gets the current charicter sheet stats', function() {
+      return asset_editor.getCharicterSheet()
+        .catch(function(err) {
+          expect(err).to.not.exist();
+        })
+        .then(function(sheet) {
+          expect(sheet).to.deep.equal({
+            values: {
+              might:         15,
+              constitution:  16,
+              dexterity:     11,
+              perception:    12,
+              intellect:     10,
+              resolve:       11,
+            },
+            offsets: {
+              might:         124,
+              constitution:  128,
+              dexterity:     132,
+              perception:    136,
+              intellect:     140,
+              resolve:       144,
+            },
+            stat_total: 75,
+            base_offset: 807616,
+          });
         });
     });
   });
