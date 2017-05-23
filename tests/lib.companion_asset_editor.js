@@ -294,4 +294,46 @@ describe('CompanionAssetEditor', function() {
         });
     });
   });
+
+  describe('alterStats', function() {
+    let new_stats;
+
+    beforeEach(function() {
+      new_stats = {
+        values: {
+          might:         16,
+          constitution:  10,
+          dexterity:     10,
+          perception:    3,
+          intellect:     18,
+          resolve:       18,
+        },
+        offsets: {
+          might:         124,
+          constitution:  128,
+          dexterity:     132,
+          perception:    136,
+          intellect:     140,
+          resolve:       144,
+        },
+        stat_total:  75,
+        base_offset: 807616,
+      };
+    });
+
+    beforeEach(function() {
+      return asset_editor.getCharicterSheet();
+    });
+
+    it('updates the buffer with the new stats', function() {
+      return asset_editor.alterStats(new_stats)
+        .then(function() {
+          return asset_editor.getCharicterSheet();
+        })
+        .then(function(sheet) {
+          expect(sheet).to.deep.equal(new_stats);
+        });
+    });
+
+  });
 });
