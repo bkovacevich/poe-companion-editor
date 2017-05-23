@@ -1,8 +1,12 @@
 'use strict';
 
 const expect               = require('chai').expect;
-const CompanionAssetEditor = require('../lib/companion_asset_editor');
+const Promise              = require('bluebird');
 const fs                   = require('fs');
+
+const CompanionAssetEditor = require('../lib/companion_asset_editor');
+
+const unlink = Promise.promisify(fs.unlink);
 
 describe('CompanionAssetEditor', function() {
   let companion_file_name;
@@ -295,7 +299,7 @@ describe('CompanionAssetEditor', function() {
     });
   });
 
-  describe('alterStats', function() {
+  describe('.alterStats', function() {
     let new_stats;
 
     beforeEach(function() {
@@ -334,6 +338,62 @@ describe('CompanionAssetEditor', function() {
           expect(sheet).to.deep.equal(new_stats);
         });
     });
+  });
 
+  describe('.saveAs', function() {
+    let new_filename = 'tests/data/companion_eder_new.unity3d';
+    let new_stats;
+
+    beforeEach(function() {
+      return unlink(new_filename);
+    });
+
+    beforeEach(function() {
+      return asset_editor.getCharicterSheet();
+    });
+
+    beforeEach(function() {
+      new_stats = {
+        values: {
+          might:         16,
+          constitution:  10,
+          dexterity:     10,
+          perception:    3,
+          intellect:     18,
+          resolve:       18,
+        },
+        offsets: {
+          might:         124,
+          constitution:  128,
+          dexterity:     132,
+          perception:    136,
+          intellect:     140,
+          resolve:       144,
+        },
+        stat_total:  75,
+        base_offset: 807616,
+      };
+
+      return asset_editor.alterStats(new_stats);
+    });
+
+    afterEach(function() {
+      return unlink(new_filename);
+    });
+
+    it('saves the current buffer', function() {
+      return asset_editor.saveAs(new_filename)
+        .then(function() {
+          let new_asset_editor = new CompanionAssetEditor(new_filename);
+
+          return new_asset_editor.getCharicterSheet();
+        })
+        .catch(function(err) {
+          expect(err).to.not.exist;
+        })
+        .then(function(sheet) {
+          expect(sheet).to.deep.equal(new_stats);
+        });
+    });
   });
 });
