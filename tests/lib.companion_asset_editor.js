@@ -345,7 +345,12 @@ describe('CompanionAssetEditor', function() {
     let new_stats;
 
     beforeEach(function() {
-      return unlink(new_filename);
+      return unlink(new_filename)
+        .catch(function(err) {
+          if(!/ENOENT/.test(err.message)) {
+            throw err;
+          }
+        });
     });
 
     beforeEach(function() {
