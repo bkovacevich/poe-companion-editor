@@ -311,4 +311,112 @@ describe('ObjectInfo', function() {
       });
     });
   });
+
+  describe('#findObjectMetadataByType', function() {
+    let type_id;
+    let object_info;
+
+    beforeEach(function() {
+      type_id = -12;
+
+      let buffer = AssetBuffer.fromArray([]);
+
+      object_info = new ObjectInfo(buffer);
+
+      object_info.object_metadata = {
+        objects: [],
+      };
+
+      object_info.object_metadata.objects.push({
+        type_id: 12,
+        name:    'not found',
+      });
+      object_info.object_metadata.objects.push({
+        type_id: -12,
+        name:    'found',
+      });
+      object_info.object_metadata.objects.push({
+        type_id: -12,
+        name:    'also not found',
+      });
+    });
+
+    it('returns the first object with a matching type id', function() {
+      var object_metadata = object_info.findObjectMetadataByType(-12);
+
+      expect(object_metadata).to.deep.equal({
+        type_id: -12,
+        name:    'found',
+      });
+
+    });
+
+  });
+
+  describe('#readObject', function() {
+    let type;
+    let object_info;
+
+    beforeEach(function() {
+      type = {
+        type_id: 1,
+        type: {
+          name: 'root',
+          type: 'root_object',
+          children: [
+            {
+              type: 'int',
+              name: 'first_value',
+            },
+            {
+              type: 'int',
+              name: 'second_value',
+            },
+          ]
+        },
+      };
+    });
+
+    beforeEach(function() {
+      let buffer = AssetBuffer.fromArray(new Array(4));
+
+      buffer.writeInt32LE(0);
+      buffer.writeInt32LE(1);
+      buffer.writeInt32LE(2);
+
+      object_info = new ObjectInfo(buffer);
+    });
+
+    beforeEach(function() {
+      object_info.object_metadata = {
+        num_objects: 1,
+        objects: [
+          {
+            type_id: 1,
+            offset: 4,
+            size:   8,
+          }
+        ],
+      };
+    });
+
+    it('reads the object data for that type', function() {
+      var object_data = object_info.readObject(type);
+
+      expect(object_data).to.deep.equal({
+        offset: 0,
+        value: {
+          first_value: {
+            offset: 0,
+            value:  1
+          },
+          second_value: {
+            offset: 4,
+            value:  2
+          },
+        }
+      });
+    });
+
+  });
 });
