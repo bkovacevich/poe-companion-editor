@@ -180,4 +180,117 @@ describe('ObjectInfo', function() {
       });
     });
   });
+
+  describe('.readType', function() {
+    let test_types;
+    let buffer;
+
+    beforeEach(function() {
+      test_types = [
+        { type: 'bool' },
+        { type: 'SInt8' },
+        { type: 'UInt8' },
+        { type: 'SInt16' },
+        { type: 'UInt16' },
+        { type: 'UInt32' },
+        { type: 'unsigned int' },
+        { type: 'SInt32' },
+        { type: 'int' },
+        { type: 'float' },
+        { type: 'string' },
+        { type: 'Array', children: [ { type: 'int' }, { type: 'int'} ]},
+      ];
+    });
+
+    beforeEach(function() {
+      buffer = AssetBuffer.fromArray([]);
+    });
+
+    beforeEach(function() {
+      buffer.writeInt8(0);
+      buffer.writeInt8(-1);
+      buffer.writeUInt8(2);
+      buffer.writeInt16LE(-3);
+      buffer.writeUInt16LE(4);
+      buffer.writeUInt32LE(5);
+      buffer.writeUInt32LE(6);
+      buffer.writeInt32LE(-7);
+      buffer.writeInt32LE(-8);
+      buffer.writeFloatLE(9.00);
+      buffer.writeInt32LE(3);
+      buffer.writeString('ten');
+      buffer.writeInt32LE(1);
+      buffer.writeInt32LE(1);
+    });
+
+    it('can read sinple types', function() {
+      var read_types = [];
+
+      test_types.forEach(function(type) {
+        var read_type = ObjectInfo.readType(buffer, type);
+
+        read_types.push(read_type);
+      });
+
+      expect(read_types).to.deep.equal([
+        {
+          offset: 0,
+          value: 0,
+        },
+        {
+          offset: 1,
+          value: -1,
+        },
+        {
+          offset: 2,
+          value: 2,
+        },
+        {
+          offset: 3,
+          value: -3,
+        },
+        {
+          offset: 5,
+          value: 4,
+        },
+        {
+          offset: 7,
+          value: 5,
+        },
+        {
+          offset: 11,
+          value: 6,
+        },
+        {
+          offset: 15,
+          value: -7,
+        },
+        {
+          offset: 19,
+          value: -8,
+        },
+        {
+          offset: 23,
+          value: 9,
+        },
+        {
+          offset: 27,
+          value: 'ten',
+        },
+        {
+          offset: 34,
+          value: [
+            {
+              offset: 34,
+              value: 1,
+            },
+            {
+              offset: 38,
+              value: 1,
+            },
+          ],
+        },
+      ]);
+    });
+  });
 });
