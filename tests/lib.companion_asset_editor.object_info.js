@@ -184,6 +184,7 @@ describe('ObjectInfo', function() {
   describe('.readType', function() {
     let test_types;
     let buffer;
+    let object_type;
 
     beforeEach(function() {
       test_types = [
@@ -203,24 +204,51 @@ describe('ObjectInfo', function() {
     });
 
     beforeEach(function() {
+      object_type = {
+        type: 'fake-type',
+        align_after_reading: true,
+        children: [
+          { type: 'string', name: 'fake_string' },
+          { type: 'UInt8', name: 'fake_int' },
+        ],
+      }
+    });
+
+    beforeEach(function() {
       buffer = AssetBuffer.fromArray([]);
     });
 
     beforeEach(function() {
       buffer.writeInt8(0);
+
       buffer.writeInt8(-1);
+
       buffer.writeUInt8(2);
+
       buffer.writeInt16LE(-3);
+
       buffer.writeUInt16LE(4);
+
       buffer.writeUInt32LE(5);
+
       buffer.writeUInt32LE(6);
+
       buffer.writeInt32LE(-7);
       buffer.writeInt32LE(-8);
+
       buffer.writeFloatLE(9.00);
+
       buffer.writeInt32LE(3);
       buffer.writeString('ten');
+
       buffer.writeInt32LE(1);
       buffer.writeInt32LE(1);
+
+      buffer.writeInt32LE(6);
+      buffer.writeString('string');
+      buffer.writeInt8(55);
+      buffer.writeInt8(0);
+      buffer.writeInt16LE(0);
     });
 
     it('can read sinple types', function() {
@@ -233,64 +261,54 @@ describe('ObjectInfo', function() {
       });
 
       expect(read_types).to.deep.equal([
-        {
-          offset: 0,
-          value: 0,
-        },
-        {
-          offset: 1,
-          value: -1,
-        },
-        {
-          offset: 2,
-          value: 2,
-        },
-        {
-          offset: 3,
-          value: -3,
-        },
-        {
-          offset: 5,
-          value: 4,
-        },
-        {
-          offset: 7,
-          value: 5,
-        },
-        {
-          offset: 11,
-          value: 6,
-        },
-        {
-          offset: 15,
-          value: -7,
-        },
-        {
-          offset: 19,
-          value: -8,
-        },
-        {
-          offset: 23,
-          value: 9,
-        },
-        {
-          offset: 27,
-          value: 'ten',
-        },
+        { offset: 0, value: 0 },
+        { offset: 1,  value: -1 },
+        { offset: 2, value: 2 },
+        { offset: 3, value: -3 },
+        { offset: 5, value: 4 },
+        { offset: 7, value: 5 },
+        { offset: 11, value: 6 },
+        { offset: 15, value: -7 },
+        { offset: 19, value: -8 },
+        { offset: 23, value: 9 },
+        { offset: 27, value: 'ten' },
         {
           offset: 34,
           value: [
-            {
-              offset: 34,
-              value: 1,
-            },
-            {
-              offset: 38,
-              value: 1,
-            },
+            { offset: 34, value: 1 },
+            { offset: 38, value: 1 },
           ],
         },
       ]);
+    });
+
+    it('can read object types', function() {
+      buffer.moveTo(42);
+
+      let object_data = ObjectInfo.readType(buffer, object_type);
+
+      expect(object_data).to.deep.equal({
+        offset: 42,
+        value: {
+          fake_int: {
+            offset: 52,
+            value: 55,
+          },
+          fake_string: {
+            offset: 42,
+            value: 'string',
+          },
+        },
+      });
+
+      expect(buffer.readOffset).to.equal(56);
+    });
+
+    context('when the type is unknown', function() {
+      let unknown_type = { type: 'unknown-type' };
+      it('throws an error', function() {
+        expect(ObjectInfo.readType.bind(null, buffer, unknown_type)).to.throw(/Invalid type:.*unknown\-type/);
+      });
     });
   });
 });
