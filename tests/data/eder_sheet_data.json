@@ -667,12 +667,39 @@
     "Abilities": {
       "value": {
         "Array": {
-          "value": {
-            "size": {
+          "value": [
+            {
+              "value": 0,
+              "offset": 680
+            },
+            {
+              "value": {
+                "m_FileID": {
+                  "value": 0,
+                  "offset": 684
+                },
+                "m_PathID": {
+                  "value": 0,
+                  "offset": 688
+                }
+              },
+              "offset": 684
+            }
+          ],
+          "offset": 680
+        }
+      },
+      "offset": 680
+    },
+    "AfflictionImmunities": {
+      "value": {
+        "Array": {
+          "value": [
+            {
               "value": 0,
               "offset": 692
             },
-            "data": {
+            {
               "value": {
                 "m_FileID": {
                   "value": 0,
@@ -685,21 +712,48 @@
               },
               "offset": 696
             }
-          },
-          "offset": 680
+          ],
+          "offset": 692
         }
       },
-      "offset": 680
+      "offset": 692
     },
-    "AfflictionImmunities": {
+    "Talents": {
       "value": {
         "Array": {
-          "value": {
-            "size": {
+          "value": [
+            {
+              "value": 1,
+              "offset": 704
+            },
+            {
+              "value": {
+                "m_FileID": {
+                  "value": 3,
+                  "offset": 708
+                },
+                "m_PathID": {
+                  "value": 266,
+                  "offset": 712
+                }
+              },
+              "offset": 708
+            }
+          ],
+          "offset": 704
+        }
+      },
+      "offset": 704
+    },
+    "Flankers": {
+      "value": {
+        "Array": {
+          "value": [
+            {
               "value": 0,
               "offset": 716
             },
-            "data": {
+            {
               "value": {
                 "m_FileID": {
                   "value": 0,
@@ -712,66 +766,13 @@
               },
               "offset": 720
             }
-          },
-          "offset": 704
+          ],
+          "offset": 716
         }
       },
-      "offset": 704
-    },
-    "Talents": {
-      "value": {
-        "Array": {
-          "value": {
-            "size": {
-              "value": 0,
-              "offset": 740
-            },
-            "data": {
-              "value": {
-                "m_FileID": {
-                  "value": 2,
-                  "offset": 744
-                },
-                "m_PathID": {
-                  "value": 0,
-                  "offset": 748
-                }
-              },
-              "offset": 744
-            }
-          },
-          "offset": 728
-        }
-      },
-      "offset": 728
-    },
-    "Flankers": {
-      "value": {
-        "Array": {
-          "value": {
-            "size": {
-              "value": 0,
-              "offset": 764
-            },
-            "data": {
-              "value": {
-                "m_FileID": {
-                  "value": 69,
-                  "offset": 768
-                },
-                "m_PathID": {
-                  "value": 0,
-                  "offset": 772
-                }
-              },
-              "offset": 768
-            }
-          },
-          "offset": 752
-        }
-      },
-      "offset": 752
+      "offset": 716
     }
   },
-  "offset": 0
+  "offset": 0,
+  "raw_data_offset": 807616
 }

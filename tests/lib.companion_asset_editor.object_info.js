@@ -404,6 +404,7 @@ describe('ObjectInfo', function() {
       var object_data = object_info.readObject(type);
 
       expect(object_data).to.deep.equal({
+        raw_data_offset: 4,
         offset: 0,
         value: {
           first_value: {
