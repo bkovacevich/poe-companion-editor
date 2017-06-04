@@ -44,7 +44,9 @@ class CharicterSheet extends React.Component {
     }
 
     return <table id='charicter-sheet' className={ className }>
-        { rows }
+        <tbody>
+          { rows }
+        </tbody>
       </table>;
   }
 }

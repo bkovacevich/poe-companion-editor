@@ -8,8 +8,9 @@ const promiseMiddleware      = require('redux-promise-middleware').default;
 
 const { createStore, combineReducers, applyMiddleware } = require('redux');
 
-const { FileBrowser } = require('../file');
-const file_reducers   = require('../file/reducers');
+const { FileBrowser }    = require('../file');
+const { CharicterSheet } = require('../charicter_sheet');
+const file_reducers      = require('../file/reducers');
 
 let reducers   = combineReducers(file_reducers);
 let middleware = applyMiddleware(logger, promiseMiddleware());
@@ -19,6 +20,7 @@ class Editor extends React.Component {
   render() {
     return <Provider store={store}>
       <div id='editor'>
+        <CharicterSheet />
         <FileBrowser />
       </div>
     </Provider>

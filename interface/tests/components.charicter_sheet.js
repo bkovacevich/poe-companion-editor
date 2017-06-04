@@ -90,9 +90,10 @@ describe('.interface.components.CharicterSheet', function() {
 
       expect(rendered.props.id).to.equal('charicter-sheet');
       expect(rendered.props.className).to.equal('active');
+      expect(rendered.props.children.type).to.equal('tbody');
 
-      let stat_names  = rendered.props.children.map(function(child) {return child.props.children[0].props.children});
-      let stat_values = rendered.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
+      let stat_names  = rendered.props.children.props.children.map(function(child) {return child.props.children[0].props.children});
+      let stat_values = rendered.props.children.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
 
       expect(stat_names).to.deep.equal([
         'Might',
@@ -117,8 +118,8 @@ describe('.interface.components.CharicterSheet', function() {
         expect(rendered.props.id).to.equal('charicter-sheet');
         expect(rendered.props.className).to.equal('in-active');
 
-        let stat_names  = rendered.props.children.map(function(child) {return child.props.children[0].props.children});
-        let stat_values = rendered.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
+        let stat_names  = rendered.props.children.props.children.map(function(child) {return child.props.children[0].props.children});
+        let stat_values = rendered.props.children.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
 
         expect(stat_names).to.deep.equal([
           'Might',
