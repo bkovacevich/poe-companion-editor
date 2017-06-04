@@ -4,7 +4,16 @@
   "description": "Pillars Of Eternity companion stat editor",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha tests/"
+    "test": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register interface/tests tests",
+    "start": "./node_modules/electron/cli.js .",
+    "build": "webpack"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "only": "./interface"
   },
   "repository": {
     "type": "git",
@@ -25,14 +34,26 @@
   },
   "homepage": "https://github.com/bkovacevich/poe-companion-editor#readme",
   "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
     "chai": "^3.5.0",
+    "electron": "^1.6.10",
     "mocha": "^3.4.1",
+    "react-test-renderer": "^15.5.4",
     "sinon": "^2.2.0",
-    "sinon-chai": "^2.10.0"
+    "sinon-chai": "^2.10.0",
+    "webpack": "^2.6.1"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
     "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
     "smart-buffer": "^3.0.3"
   }
 }
