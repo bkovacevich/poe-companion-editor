@@ -1,6 +1,7 @@
 'use strict';
 
-const React = require('react');
+const React       = require('react');
+const { connect } = require('react-redux');
 
 class CharicterSheet extends React.Component {
   render() {
@@ -22,7 +23,8 @@ class CharicterSheet extends React.Component {
       stats.forEach(function(stat) {
         rows.push(
           <tr key={ stat }>
-            <td className='stat-title'>{ stat }</td><td className='stat-value'>{ stat_values[stat.toLowerCase()] }</td>
+            <td className='stat-title'>{ stat }</td>
+            <td className='stat-value'><textbox id={ stat + '-box'} className='stat-box'>{ stat_values[stat.toLowerCase()] }</textbox></td>
           </tr>
         );
       });
@@ -32,7 +34,8 @@ class CharicterSheet extends React.Component {
       stats.forEach(function(stat) {
         rows.push(
           <tr key={ stat }>
-            <td className='stat-title'>{ stat }</td><td className='stat-value'></td>
+            <td className='stat-title'>{ stat }</td>
+            <td className='stat-value'><textbox id={ stat + '-box'} className='stat-box'></textbox></td>
           </tr>
         );
       });
@@ -46,4 +49,11 @@ class CharicterSheet extends React.Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    charicter_sheet: state.loadFile.charicter_sheet,
+  }
+}
+
 exports.TestCharicterSheet = CharicterSheet;
+exports.CharicterSheet     = connect(mapStateToProps)(CharicterSheet);
