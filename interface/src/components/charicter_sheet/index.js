@@ -24,7 +24,7 @@ class CharicterSheet extends React.Component {
         rows.push(
           <tr key={ stat }>
             <td className='stat-title'>{ stat }</td>
-            <td className='stat-value'><textbox id={ stat + '-box'} className='stat-box'>{ stat_values[stat.toLowerCase()] }</textbox></td>
+            <td className='stat-value'><input type="text" id={ stat + '-box'} className='stat-box'>{ stat_values[stat.toLowerCase()] }</input></td>
           </tr>
         );
       });
@@ -35,7 +35,7 @@ class CharicterSheet extends React.Component {
         rows.push(
           <tr key={ stat }>
             <td className='stat-title'>{ stat }</td>
-            <td className='stat-value'><textbox id={ stat + '-box'} className='stat-box'></textbox></td>
+            <td className='stat-value'><input type="text" id={ stat + '-box'} className='stat-box'></input></td>
           </tr>
         );
       });
