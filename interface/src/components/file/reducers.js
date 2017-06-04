@@ -10,25 +10,28 @@ let default_state = {
 
 function loadFile(state=default_state, action) {
   switch(action.type) {
-    case 'LOAD_FILE': {
+    case 'LOAD_FILE_PENDING': {
       return Object.assign({}, state, {
         file_loading:  true,
-        filename:      action.payload,
+        filename:      null,
       });
     }
 
-    case 'LOAD_FILE_FAILURE': {
+    case 'LOAD_FILE_REJECTED': {
       return Object.assign({}, state, {
         file_loading:  false,
-        filename:      null,
         error:         action.payload,
       });
     }
 
-    case 'LOAD_FILE_SUCCESS': {
+    case 'LOAD_FILE_FULFILLED': {
+      let { sheet, filename } = action.payload;
+
       return Object.assign({}, state, {
-        file_loading:  false,
-        charicter_sheet: action.payload,
+        file_loading:    false,
+        filename:        filename,
+        charicter_sheet: sheet,
+        error:           null,
       });
     }
     default: {

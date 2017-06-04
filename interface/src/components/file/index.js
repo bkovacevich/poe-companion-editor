@@ -28,9 +28,12 @@ class FileBrowser extends React.Component {
   }
 
   openFile() {
-    let file_browser_options = {};
+    let file_browser_options = {
+    };
 
-    remote.dialog.showOpenDialog(null, file_browser_options, (filename) => {
+    remote.dialog.showOpenDialog(null, file_browser_options, (results) => {
+      let filename = results[0];
+
       this.props.dispatch(file_actions.loadFile(filename));
     });
   }

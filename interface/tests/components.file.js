@@ -1,7 +1,6 @@
 'use strict';
 
 const { expect }      = require('chai');
-const sinon           = require('sinon');
 const React           = require('react');
 const { createStore } = require('redux');
 const electron        = require('electron');
@@ -23,7 +22,7 @@ describe('interface.components.file', function() {
       },
     };
 
-    reducer = sinon.stub().returns(initial_state);
+    reducer = this.sinon.stub().returns(initial_state);
 
     store = createStore(reducer);
   });

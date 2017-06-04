@@ -1,22 +1,19 @@
 'use strict';
 
+const CompanionAssetEditor = require('../../../../lib/companion_asset_editor');
+
 exports.loadFile  = function(filename) {
+  let editor = new CompanionAssetEditor(filename);
+
+  let payload = editor.load()
+    .then(() => {
+      let sheet = editor.getCharicterSheet();
+
+      return { sheet, filename };
+    });
+
   return {
     type: 'LOAD_FILE',
-    payload: filename,
-  };
-};
-
-exports.loadFileSuccess = function(sheet) {
-  return {
-    type: 'LOAD_FILE_SUCCESS',
-    payload: sheet,
-  };
-};
-
-exports.loadFileFailure = function(err) {
-  return {
-    type: 'LOAD_FILE_FAILURE',
-    payload: err,
+    payload: payload,
   };
 };
