@@ -3,7 +3,6 @@
 const { expect }      = require('chai');
 const React           = require('react');
 const { createStore } = require('redux');
-const electron        = require('electron');
 
 
 const helpers = require('./helpers');
