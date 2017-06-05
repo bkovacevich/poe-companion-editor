@@ -1,9 +1,9 @@
 'use strict';
 
-const { remote } = require('electron');
-
-const React    = require('react');
-const { connect }  = require('react-redux');
+const { remote }  = require('electron');
+const React       = require('react');
+const { connect } = require('react-redux');
+const path        = require('path');
 
 const file_actions = require('./actions');
 
@@ -28,8 +28,10 @@ class FileBrowser extends React.Component {
   }
 
   openFile() {
-    let file_browser_options = {
-    };
+    let file_browser_options = {};
+    if (this.props.filename) {
+      file_browser_options.defaultPath = path.dirname(this.props.filename);
+    }
 
     remote.dialog.showOpenDialog(null, file_browser_options, (results) => {
       let filename = results[0];
@@ -42,6 +44,7 @@ class FileBrowser extends React.Component {
 function mapStateToProps(state) {
   return {
     file_loading: state.loadFile.file_loading,
+    filename: state.loadFile.filename,
   }
 }
 
