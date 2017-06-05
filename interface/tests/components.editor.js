@@ -18,6 +18,10 @@ describe('interface.components.editor', function() {
       let state = rendered.props.store.getState();
 
       expect(state).to.deep.equal({
+        charicterSheet: {
+          charicter_sheet: null,
+          error:           null,
+        },
         loadFile: {
           file_loading:    false,
           filename:        null,

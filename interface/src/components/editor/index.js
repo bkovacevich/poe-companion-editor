@@ -8,11 +8,12 @@ const promiseMiddleware      = require('redux-promise-middleware').default;
 
 const { createStore, combineReducers, applyMiddleware } = require('redux');
 
-const { FileBrowser }    = require('../file');
-const { CharicterSheet } = require('../charicter_sheet');
-const file_reducers      = require('../file/reducers');
+const { FileBrowser }          = require('../file');
+const { CharicterSheet }       = require('../charicter_sheet');
+const file_reducers            = require('../file/reducers');
+const charicter_sheet_reducers = require('../charicter_sheet/reducers');
 
-let reducers   = combineReducers(file_reducers);
+let reducers   = combineReducers(Object.assign({}, file_reducers, charicter_sheet_reducers));
 let middleware = applyMiddleware(logger, promiseMiddleware());
 let store      = createStore(reducers, middleware);
 

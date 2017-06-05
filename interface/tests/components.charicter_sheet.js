@@ -6,6 +6,8 @@ const { createStore } = require('redux');
 
 const helpers = require('./helpers');
 
+const actions = require('../src/components/charicter_sheet/actions');
+
 const { CharicterSheet, TestCharicterSheet } = require('../src/components/charicter_sheet');
 
 describe('.interface.components.CharicterSheet', function() {
@@ -37,7 +39,7 @@ describe('.interface.components.CharicterSheet', function() {
     };
 
     initial_state = {
-      loadFile: {
+      charicterSheet: {
         charicter_sheet: fake_sheet,
       },
     };
@@ -90,10 +92,14 @@ describe('.interface.components.CharicterSheet', function() {
 
       expect(rendered.props.id).to.equal('charicter-sheet');
       expect(rendered.props.className).to.equal('active');
-      expect(rendered.props.children.type).to.equal('tbody');
+      expect(rendered.props.children[0].type).to.equal('tbody');
+      expect(rendered.props.children[1].type).to.equal('tfoot');
 
-      let stat_names  = rendered.props.children.props.children.map(function(child) {return child.props.children[0].props.children});
-      let stat_values = rendered.props.children.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
+      expect(rendered.props.children[1].props.children.props.children[0].props.children).to.equal('Total');
+      expect(rendered.props.children[1].props.children.props.children[1].props.children).to.equal(75);
+
+      let stat_names  = rendered.props.children[0].props.children.map(function(child) {return child.props.children[0].props.children});
+      let stat_values = rendered.props.children[0].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
 
       expect(stat_names).to.deep.equal([
         'Might',
@@ -118,8 +124,13 @@ describe('.interface.components.CharicterSheet', function() {
         expect(rendered.props.id).to.equal('charicter-sheet');
         expect(rendered.props.className).to.equal('in-active');
 
-        let stat_names  = rendered.props.children.props.children.map(function(child) {return child.props.children[0].props.children});
-        let stat_values = rendered.props.children.props.children.map(function(child) {return child.props.children[1].props.children.props.children});;
+        expect(rendered.props.children[0].type).to.equal('tbody');
+
+        expect(rendered.props.children[1].props.children.props.children[0].props.children).to.equal('Total');
+        expect(rendered.props.children[1].props.children.props.children[1].props.children).to.equal('');
+
+        let stat_names  = rendered.props.children[0].props.children.map(function(child) {return child.props.children[0].props.children});
+        let stat_values = rendered.props.children[0].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
 
         expect(stat_names).to.deep.equal([
           'Might',
@@ -130,10 +141,66 @@ describe('.interface.components.CharicterSheet', function() {
           'Resolve',
         ]);
 
-        expect(stat_values).to.deep.equal([undefined, undefined, undefined, undefined, undefined, undefined]);
+        expect(stat_values).to.deep.equal(['', '', '', '', '', '']);
+      });
+    });
+
+  });
+
+  describe('#changeStat', function() {
+    let event;
+    let charicter_sheet;
+
+    beforeEach(function() {
+      event = {
+        target: {
+          id:        'Might-box',
+          className: 'stat-box',
+          value:     10,
+        }
+      };
+
+      charicter_sheet = new TestCharicterSheet(store);
+    });
+
+    beforeEach(function() {
+      this.sinon.spy(actions, 'changeStat');
+      this.sinon.stub(charicter_sheet.props, 'dispatch').returns();
+    });
+
+    it('dispatches a change stat action', function() {
+
+      charicter_sheet.changeStat(event);
+
+      expect(actions.changeStat).to.have.been.calledOnce;
+      expect(actions.changeStat.args[0]).to.deep.equal([
+        'might',
+        10,
+      ]);
+
+      expect(charicter_sheet.props.dispatch).to.have.been.calledOnce;
+      expect(charicter_sheet.props.dispatch.args[0]).to.deep.equal([
+        {
+          type:    'CHANGE_STAT',
+          payload: {
+            stat:  "might",
+            value: 10,
+          },
+        },
+      ]);
+    });
+
+    context('when id is null', function() {
+      beforeEach(function() {
+        event.target.id = undefined;
+      });
+
+      it('does nothing', function() {
+        charicter_sheet.changeStat(event);
+
+        expect(actions.changeStat).to.not.have.been.called;
+        expect(charicter_sheet.props.dispatch).to.not.have.been.called;
       });
     });
   });
-
-
 });
