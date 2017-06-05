@@ -23,10 +23,10 @@ describe('interface.components.editor', function() {
           error:           null,
         },
         loadFile: {
-          file_loading:    false,
-          filename:        null,
-          charicter_sheet: null,
-          error:           null,
+          file_loading:            false,
+          filename:                null,
+          companion_asset_editor:  null,
+          error:                   null,
         },
       });
     });

@@ -4,12 +4,12 @@ const { expect } = require('chai');
 
 const file_actions = require('../src/components/file/actions');
 
-const charicter_editor = require('../../lib/companion_asset_editor');
+const CompanionAssetEditor = require('../../lib/companion_asset_editor');
 
 describe('.interface.components.file.actions', function() {
   beforeEach(function() {
-    this.sinon.stub(charicter_editor.prototype, 'load').resolves();
-    this.sinon.stub(charicter_editor.prototype, 'getCharicterSheet').returns({ fake: 'sheet' });
+    this.sinon.stub(CompanionAssetEditor.prototype, 'load').resolves();
+    this.sinon.stub(CompanionAssetEditor.prototype, 'getCharicterSheet').returns({ fake: 'sheet' });
   });
 
   describe('.loadFile', function() {
@@ -18,8 +18,8 @@ describe('.interface.components.file.actions', function() {
 
       let action = file_actions.loadFile(filename);
 
-      expect(charicter_editor.prototype.load).to.have.been.calledOnce;
-      expect(charicter_editor.prototype.load.thisValues[0].file_name).to.equal('fake_filename');
+      expect(CompanionAssetEditor.prototype.load).to.have.been.calledOnce;
+      expect(CompanionAssetEditor.prototype.load.thisValues[0].file_name).to.equal('fake_filename');
 
       expect(action.type).to.equal('LOAD_FILE');
 
@@ -27,8 +27,9 @@ describe('.interface.components.file.actions', function() {
         .catch(function(err) {
           expect(err).to.not.exist();
         })
-        .then(function({ sheet, filename }) {
+        .then(function({ sheet, companion_asset_editor, filename }) {
           expect(filename).to.equal('fake_filename');
+          expect(companion_asset_editor).to.be.an.instanceOf(CompanionAssetEditor);
           expect(sheet).to.deep.equal({ fake: 'sheet' });
         });
     });

@@ -3,13 +3,13 @@
 const CompanionAssetEditor = require('../../../../lib/companion_asset_editor');
 
 exports.loadFile  = function(filename) {
-  let editor = new CompanionAssetEditor(filename);
+  let companion_asset_editor = new CompanionAssetEditor(filename);
 
-  let payload = editor.load()
+  let payload = companion_asset_editor.load()
     .then(() => {
-      let sheet = editor.getCharicterSheet();
+      let sheet = companion_asset_editor.getCharicterSheet();
 
-      return { sheet, filename };
+      return { sheet, companion_asset_editor, filename };
     });
 
   return {

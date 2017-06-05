@@ -11,10 +11,10 @@ describe('interface.components.file.reducers', function() {
 
     beforeEach(function() {
       state = {
-        file_loading:    false,
-        filename:        'fake-filename',
-        charicter_sheet: null,
-        error:           null,
+        file_loading:             false,
+        filename:                 'fake-filename',
+        companion_asset_editor:   null,
+        error:                    null,
       };
     });
 
@@ -30,10 +30,10 @@ describe('interface.components.file.reducers', function() {
         let new_state = file_reducers.loadFile(state, action);
 
         expect(new_state).to.deep.equal({
-          filename:        null,
-          file_loading:    true,
-          charicter_sheet: null,
-          error:           null,
+          filename:                 null,
+          file_loading:             true,
+          companion_asset_editor:   null,
+          error:                    null,
         });
       });
     });
@@ -53,10 +53,10 @@ describe('interface.components.file.reducers', function() {
         let new_state = file_reducers.loadFile(state, action);
 
         expect(new_state).to.deep.equal({
-          filename:        null,
-          file_loading:    false,
-          charicter_sheet: null,
-          error:           'fake_error',
+          filename:                 null,
+          file_loading:             false,
+          companion_asset_editor:   null,
+          error:                    'fake_error',
         });
       });
     });
@@ -67,12 +67,12 @@ describe('interface.components.file.reducers', function() {
         state.file_loading = true;
         state.error        = 'fake-error';
 
-        let sheet = { fake: 'sheet' };
+        let companion_asset_editor = { fake: 'fake-asset-editor' };
         let filename = 'new_fake_filename';
 
         action = {
           type:    'LOAD_FILE_FULFILLED',
-          payload: { sheet, filename },
+          payload: { companion_asset_editor, filename },
         };
       });
 
@@ -80,10 +80,10 @@ describe('interface.components.file.reducers', function() {
         let new_state = file_reducers.loadFile(state, action);
 
         expect(new_state).to.deep.equal({
-          filename:        'new_fake_filename',
-          file_loading:    false,
-          charicter_sheet: { fake: 'sheet' },
-          error:           null,
+          filename:                 'new_fake_filename',
+          file_loading:             false,
+          companion_asset_editor:   { fake: 'fake-asset-editor' },
+          error:                    null,
         });
       });
     });

@@ -1,10 +1,10 @@
 'use strict';
 
 let default_state = {
-  file_loading:     false,
-  filename:         null,
-  charicter_sheet:  null,
-  error:            null,
+  file_loading:             false,
+  filename:                 null,
+  companion_asset_editor:   null,
+  error:                    null,
 };
 
 
@@ -25,13 +25,13 @@ function loadFile(state=default_state, action) {
     }
 
     case 'LOAD_FILE_FULFILLED': {
-      let { sheet, filename } = action.payload;
+      let { companion_asset_editor, filename } = action.payload;
 
       return Object.assign({}, state, {
-        file_loading:    false,
-        filename:        filename,
-        charicter_sheet: sheet,
-        error:           null,
+        file_loading:             false,
+        filename:                 filename,
+        companion_asset_editor:   companion_asset_editor,
+        error:                    null,
       });
     }
     default: {
