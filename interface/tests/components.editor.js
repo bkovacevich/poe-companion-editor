@@ -22,7 +22,7 @@ describe('interface.components.editor', function() {
           charicter_sheet: null,
           error:           null,
         },
-        loadFile: {
+        file: {
           file_loading:            false,
           filename:                null,
           companion_asset_editor:  null,

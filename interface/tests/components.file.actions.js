@@ -34,4 +34,38 @@ describe('.interface.components.file.actions', function() {
         });
     });
   });
+
+  describe('.saveFile', function() {
+    let companion_asset_editor;
+
+    beforeEach(function() {
+      companion_asset_editor = {
+        load:               this.sinon.stub().resolves({}),
+        saveAs:             this.sinon.stub().resolves({}),
+        getCharicterSheet:  this.sinon.stub().returns({ fake:  'sheet' }),
+      };
+    });
+
+    it('returns a SAVE_FILE action with a promise', function() {
+      let filename = 'fake_filename';
+
+      let action = file_actions.saveFile(filename, companion_asset_editor);
+
+      expect(companion_asset_editor.saveAs).to.have.been.calledOnce;
+      expect(companion_asset_editor.saveAs.args[0][0]).to.equal('fake_filename');
+
+      expect(action.type).to.equal('SAVE_FILE');
+
+      return action.payload
+        .catch(function(err) {
+          expect(err).to.not.exist();
+        })
+        .then(function({ sheet, companion_asset_editor, filename }) {
+          expect(companion_asset_editor.load).to.have.been.calledOnce;
+
+          expect(filename).to.equal('fake_filename');
+          expect(sheet).to.deep.equal({ fake: 'sheet' });
+        });
+    });
+  });
 });

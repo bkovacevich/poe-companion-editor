@@ -8,7 +8,7 @@ const promiseMiddleware      = require('redux-promise-middleware').default;
 
 const { createStore, combineReducers, applyMiddleware } = require('redux');
 
-const { FileBrowser }          = require('../file');
+const { FileBrowser, FileSaver }          = require('../file');
 const { CharicterSheet }       = require('../charicter_sheet');
 const file_reducers            = require('../file/reducers');
 const charicter_sheet_reducers = require('../charicter_sheet/reducers');
@@ -23,6 +23,7 @@ class Editor extends React.Component {
       <div id='editor'>
         <CharicterSheet />
         <FileBrowser />
+        <FileSaver />
       </div>
     </Provider>
   }

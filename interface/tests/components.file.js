@@ -7,7 +7,7 @@ const { createStore } = require('redux');
 
 const helpers = require('./helpers');
 
-const { FileBrowser, TestFileBrowser } = require('../src/components/file');
+const { FileBrowser, TestFileBrowser, TestFileSaver, FileSaver } = require('../src/components/file');
 
 describe('interface.components.file', function() {
   let store;
@@ -16,8 +16,10 @@ describe('interface.components.file', function() {
 
   beforeEach(function() {
     initial_state = {
-      loadFile: {
-        file_loading: false,
+      file: {
+        file_loading:            false,
+        filename:                'fake-filename',
+        companion_asset_editor:  { fake: 'asset-editor' },
       },
     };
 
@@ -26,42 +28,98 @@ describe('interface.components.file', function() {
     store = createStore(reducer);
   });
 
-  context('when rendered with redux', function() {
-    let rendered;
+  describe('FileBrowser', function() {
+    context('when rendered with redux', function() {
+      let rendered;
 
-    beforeEach(function() {
-      rendered = helpers.shallowRender(<FileBrowser store={ store }/>);
-    });
-
-    it('sets file loading on the props', function() {
-      expect(rendered.props.file_loading).to.equal(false);
-    });
-  });
-
-  context('when rendered without redux', function() {
-    let rendered;
-
-    beforeEach(function() {
-      rendered = helpers.shallowRender(<TestFileBrowser />);
-    });
-
-    it('renders a button', function() {
-      expect(rendered.type).to.equal('button');
-
-      expect(rendered.props.id).to.equal('open-file');
-      expect(rendered.props.className).to.equal('active');
-    });
-
-    context('and the file is currently loading', function() {
       beforeEach(function() {
-        rendered = helpers.shallowRender(<TestFileBrowser file_loading={ true }/>);
+        rendered = helpers.shallowRender(<FileBrowser store={ store }/>);
       });
 
-      it('uses the loading class', function() {
-        expect(rendered.props.className).to.equal('loading');
+      it('sets file loading and filename props', function() {
+        expect(rendered.props.file_loading).to.equal(false);
+        expect(rendered.props.filename).to.equal('fake-filename');
+      });
+    });
+
+    context('when rendered without redux', function() {
+      let rendered;
+
+      beforeEach(function() {
+        rendered = helpers.shallowRender(<TestFileBrowser file_loading={ false }/>);
+      });
+
+      it('renders a button', function() {
+        expect(rendered.type).to.equal('button');
+
+        expect(rendered.props.id).to.equal('open-file');
+        expect(rendered.props.className).to.equal('active');
+      });
+
+      context('and the file is currently loading', function() {
+        beforeEach(function() {
+          rendered = helpers.shallowRender(<TestFileBrowser file_loading={ true }/>);
+        });
+
+        it('uses the inactive class', function() {
+          expect(rendered.props.className).to.equal('inactive');
+        });
       });
     });
   });
+
+  describe('FileSaver', function() {
+    context('when rendered with redux', function() {
+      let rendered;
+
+      beforeEach(function() {
+        rendered = helpers.shallowRender(<FileSaver store={ store }/>);
+      });
+
+      it('sets file loading, filename, and asset editor props', function() {
+        expect(rendered.props.file_loading).to.equal(false);
+        expect(rendered.props.filename).to.equal('fake-filename');
+        expect(rendered.props.companion_asset_editor).to.deep.equal({ fake: 'asset-editor' });
+      });
+    });
+
+    context('when rendered without redux', function() {
+      let rendered;
+
+      beforeEach(function() {
+        rendered = helpers.shallowRender(<TestFileSaver file_loading={ false} filename={ 'fake-filename' } />);
+      });
+
+      it('renders a button', function() {
+        expect(rendered.type).to.equal('button');
+
+        expect(rendered.props.id).to.equal('save-file');
+        expect(rendered.props.className).to.equal('active');
+      });
+
+      context('and the file is currently loading', function() {
+        beforeEach(function() {
+          rendered = helpers.shallowRender(<TestFileSaver file_loading={ true } filename={ 'fake-filename' } />);
+        });
+
+        it('uses the inactive class', function() {
+          expect(rendered.props.className).to.equal('inactive');
+        });
+      });
+
+      context('and the has not been loaded', function() {
+        beforeEach(function() {
+          rendered = helpers.shallowRender(<TestFileSaver file_loading={ false } />);
+        });
+
+        it('uses the inactive class', function() {
+          expect(rendered.props.className).to.equal('inactive');
+        });
+      });
+    });
+
+  });
+
 
   //TODO: Figure out how to mock showOpenDialog and test openFile
 });

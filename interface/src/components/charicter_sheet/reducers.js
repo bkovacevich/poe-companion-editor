@@ -16,9 +16,7 @@ function charicterSheet(state=initial_state, action) {
     }
 
     case 'CHANGE_STAT': {
-      let stat  = action.payload.stat;
-      let value = action.payload.value;
-
+      let { stat, value } = action.payload;
 
       let next_state = _.cloneDeep(state);
 
