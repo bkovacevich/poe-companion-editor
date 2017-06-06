@@ -14,7 +14,7 @@ exports.changeStat = function(stat, value) {
     value = Number(value);
   }
 
-  if (value > MAX_32_BIT_INT) {
+  if (Math.abs(value) > MAX_32_BIT_INT) {
     return {
       type: 'CHANGE_STAT_FAILURE',
       payload: new Error(`Value must be able to fit in a signed 32 bit intiger (max size of ${MAX_32_BIT_INT})`),

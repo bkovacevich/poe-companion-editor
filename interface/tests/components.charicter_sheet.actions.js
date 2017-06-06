@@ -61,12 +61,20 @@ describe('interface.components.charicter_sheet.actions', function() {
     });
 
     context('when the value will not fit in a 32-bit integer field', function() {
+      let negative_value;
       beforeEach(function() {
         value = MAX_32_BIT_INT + 1;
+        negative_value = -1 * value;
       });
 
       it('reterns an error action', function() {
         let action = actions.changeStat(stat, value);
+
+        expect(action.type).to.equal('CHANGE_STAT_FAILURE');
+        expect(action.payload).to.be.an.instanceOf(Error);
+        expect(action.payload.message).to.be.contain(`Value must be able to fit in a signed 32 bit intiger (max size of ${MAX_32_BIT_INT})`);
+
+        action = actions.changeStat(stat, negative_value);
 
         expect(action.type).to.equal('CHANGE_STAT_FAILURE');
         expect(action.payload).to.be.an.instanceOf(Error);
