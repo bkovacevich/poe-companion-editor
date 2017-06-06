@@ -91,15 +91,15 @@ describe('.interface.components.CharicterSheet', function() {
       expect(rendered.type).to.equal('table');
 
       expect(rendered.props.id).to.equal('charicter-sheet');
-      expect(rendered.props.className).to.equal('active');
-      expect(rendered.props.children[0].type).to.equal('tbody');
-      expect(rendered.props.children[1].type).to.equal('tfoot');
+      expect(rendered.props.children[0].type).to.equal('thead');
+      expect(rendered.props.children[1].type).to.equal('tbody');
+      expect(rendered.props.children[2].type).to.equal('tfoot');
 
-      expect(rendered.props.children[1].props.children.props.children[0].props.children).to.equal('Total');
-      expect(rendered.props.children[1].props.children.props.children[1].props.children).to.equal(75);
+      expect(rendered.props.children[2].props.children.props.children[0].props.children).to.equal('Total');
+      expect(rendered.props.children[2].props.children.props.children[1].props.children).to.equal(75);
 
-      let stat_names  = rendered.props.children[0].props.children.map(function(child) {return child.props.children[0].props.children});
-      let stat_values = rendered.props.children[0].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
+      let stat_names  = rendered.props.children[1].props.children.map(function(child) {return child.props.children[0].props.children});
+      let stat_values = rendered.props.children[1].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
 
       expect(stat_names).to.deep.equal([
         'Might',
@@ -122,15 +122,16 @@ describe('.interface.components.CharicterSheet', function() {
         expect(rendered.type).to.equal('table');
 
         expect(rendered.props.id).to.equal('charicter-sheet');
-        expect(rendered.props.className).to.equal('in-active');
 
-        expect(rendered.props.children[0].type).to.equal('tbody');
+        expect(rendered.props.children[0].type).to.equal('thead');
 
-        expect(rendered.props.children[1].props.children.props.children[0].props.children).to.equal('Total');
-        expect(rendered.props.children[1].props.children.props.children[1].props.children).to.equal('');
+        expect(rendered.props.children[1].type).to.equal('tbody');
 
-        let stat_names  = rendered.props.children[0].props.children.map(function(child) {return child.props.children[0].props.children});
-        let stat_values = rendered.props.children[0].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
+        expect(rendered.props.children[2].props.children.props.children[0].props.children).to.equal('Total');
+        expect(rendered.props.children[2].props.children.props.children[1].props.children).to.equal('');
+
+        let stat_names  = rendered.props.children[1].props.children.map(function(child) {return child.props.children[0].props.children});
+        let stat_values = rendered.props.children[1].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
 
         expect(stat_names).to.deep.equal([
           'Might',

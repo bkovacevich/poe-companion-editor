@@ -125,8 +125,9 @@ describe('CompanionAssetEditor', function() {
           intellect:     140,
           resolve:       144,
         },
-        stat_total: 75,
-        base_offset: 807616,
+        stat_total:     75,
+        base_offset:    807616,
+        charicter_name: 'Eder',
       });
     });
   });
@@ -169,8 +170,9 @@ describe('CompanionAssetEditor', function() {
               intellect:     140,
               resolve:       144,
             },
-            stat_total: 83,
-            base_offset: 807616,
+            stat_total:     83,
+            base_offset:    807616,
+            charicter_name: 'Eder',
           });
         });
     });
@@ -211,8 +213,9 @@ describe('CompanionAssetEditor', function() {
           intellect:     140,
           resolve:       144,
         },
-        stat_total:  75,
-        base_offset: 807616,
+        stat_total:     75,
+        base_offset:    807616,
+        charicter_name: 'Eder',
       };
 
       for (let stat in new_stats.values) {

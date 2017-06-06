@@ -36,12 +36,10 @@ describe('interface.components.editor', function() {
       expect(rendered.props.children.props.id).to.equal("editor");
     });
 
-    it('renders a charicter sheet', function() {
-      expect(rendered.props.children.props.children[0].type.displayName).to.equal('Connect(CharicterSheet)');
-    });
-
-    it('renders a file browser', function() {
-      expect(rendered.props.children.props.children[1].type.displayName).to.equal('Connect(FileBrowser)');
+    it('renders a charicter sheet, file browser, and file saver', function() {
+      expect(rendered.props.children.props.children[1].type.displayName).to.equal('Connect(CharicterSheet)');
+      expect(rendered.props.children.props.children[0].props.children[0].props.children[0].type.displayName).to.equal('Connect(FileBrowser)');
+      expect(rendered.props.children.props.children[0].props.children[0].props.children[1].type.displayName).to.equal('Connect(FileSaver)');
     });
 
   });

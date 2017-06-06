@@ -53,7 +53,7 @@ describe('interface.components.file', function() {
         expect(rendered.type).to.equal('button');
 
         expect(rendered.props.id).to.equal('open-file');
-        expect(rendered.props.className).to.equal('active');
+        expect(rendered.props.className).to.equal('pure-button');
       });
 
       context('and the file is currently loading', function() {
@@ -62,7 +62,7 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('inactive');
+          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
         });
       });
     });
@@ -94,7 +94,7 @@ describe('interface.components.file', function() {
         expect(rendered.type).to.equal('button');
 
         expect(rendered.props.id).to.equal('save-file');
-        expect(rendered.props.className).to.equal('active');
+        expect(rendered.props.className).to.equal('pure-button');
       });
 
       context('and the file is currently loading', function() {
@@ -103,7 +103,7 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('inactive');
+          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
         });
       });
 
@@ -113,7 +113,7 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('inactive');
+          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
         });
       });
     });

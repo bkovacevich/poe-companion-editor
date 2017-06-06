@@ -7,7 +7,7 @@ let window;
 function start() {
   window = new BrowserWindow({width: 800, height: 600});
 
-  window.loadURL(`file://${__dirname}/main.html`);
+  window.loadURL(`file://${__dirname}/index.html`);
 
   window.webContents.openDevTools();
 }

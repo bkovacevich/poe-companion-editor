@@ -16,9 +16,9 @@ class FileBrowser extends React.Component {
   }
 
   render() {
-    let button_class = this.buttonEnabled() ? 'active' : 'inactive';
+    let button_class = this.buttonEnabled() ? 'pure-button' : 'pure-button pure-button-disabled';
 
-    return <button id='open-file' className={ button_class } onClick={this.openFile}>Open File</button>;
+    return <button id='open-file' className={ button_class } onClick={this.openFile}><i className='fa fa-folder-open-o'></i> Open</button>;
   }
 
   buttonEnabled() {
@@ -54,9 +54,9 @@ class FileSaver  extends React.Component {
   }
 
   render() {
-    let button_class = this.buttonEnabled() ? 'active' : 'inactive';
+    let button_class = this.buttonEnabled() ? 'pure-button' : 'pure-button pure-button-disabled';
 
-    return <button id='save-file' className={ button_class } onClick={this.saveFile}>Save File</button>;
+    return <button id='save-file' className={ button_class } onClick={this.saveFile}><i className="fa fa-floppy-o"></i> Save</button>;
   }
 
   buttonEnabled() {
