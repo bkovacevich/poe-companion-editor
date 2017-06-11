@@ -50,10 +50,11 @@ describe('interface.components.file', function() {
       });
 
       it('renders a button', function() {
-        expect(rendered.type).to.equal('button');
+        let buttons = helpers.findAllWithType(rendered, 'button');
+        expect(buttons).to.have.length(1);
 
-        expect(rendered.props.id).to.equal('open-file');
-        expect(rendered.props.className).to.equal('pure-button');
+        expect(buttons[0].props.id).to.equal('open-file');
+        expect(buttons[0].props.className).to.equal('pure-button');
       });
 
       context('and the file is currently loading', function() {
@@ -62,7 +63,8 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
+          let buttons = helpers.findAllWithType(rendered, 'button');
+          expect(buttons[0].props.className).to.equal('pure-button pure-button-disabled');
         });
       });
     });
@@ -91,10 +93,11 @@ describe('interface.components.file', function() {
       });
 
       it('renders a button', function() {
-        expect(rendered.type).to.equal('button');
+        let buttons = helpers.findAllWithType(rendered, 'button');
+        expect(buttons).to.have.length(1);
 
-        expect(rendered.props.id).to.equal('save-file');
-        expect(rendered.props.className).to.equal('pure-button');
+        expect(buttons[0].props.id).to.equal('save-file');
+        expect(buttons[0].props.className).to.equal('pure-button');
       });
 
       context('and the file is currently loading', function() {
@@ -103,7 +106,8 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
+          let buttons = helpers.findAllWithType(rendered, 'button');
+          expect(buttons[0].props.className).to.equal('pure-button pure-button-disabled');
         });
       });
 
@@ -113,7 +117,8 @@ describe('interface.components.file', function() {
         });
 
         it('uses the inactive class', function() {
-          expect(rendered.props.className).to.equal('pure-button pure-button-disabled');
+          let buttons = helpers.findAllWithType(rendered, 'button');
+          expect(buttons[0].props.className).to.equal('pure-button pure-button-disabled');
         });
       });
     });

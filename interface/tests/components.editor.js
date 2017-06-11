@@ -28,18 +28,16 @@ describe('interface.components.editor', function() {
           companion_asset_editor:  null,
           error:                   null,
         },
+        infoReducer: [],
       });
     });
 
-    it('renders an editor div', function() {
-      expect(rendered.props.children.type).to.equal("div");
-      expect(rendered.props.children.props.id).to.equal("editor");
-    });
-
     it('renders a charicter sheet, file browser, and file saver', function() {
-      expect(rendered.props.children.props.children[1].type.displayName).to.equal('Connect(CharicterSheet)');
       expect(rendered.props.children.props.children[0].props.children[0].props.children[0].type.displayName).to.equal('Connect(FileBrowser)');
       expect(rendered.props.children.props.children[0].props.children[0].props.children[1].type.displayName).to.equal('Connect(FileSaver)');
+
+      expect(rendered.props.children.props.children[1].props.children.type.displayName).to.equal('Connect(CharicterSheet)');
+      expect(rendered.props.children.props.children[2].props.children.type.displayName).to.equal('Connect(InfoWindow)');
     });
 
   });

@@ -1,0 +1,75 @@
+#application {
+  background-color: #222222;
+  color: #E3DAC9
+}
+
+#menu-bar {
+  background-color: #444444;
+}
+
+.pure-button {
+  background-color: #555555;
+  color: #E3DAC9
+}
+
+input {
+  background-color: #444444;
+  border-color: #666666;
+}
+
+#close-window {
+  text-align: right;
+}
+
+.pure-table {
+  border: 0px;
+  border-width: 0px;
+}
+
+.pure-table thead {
+  background-color: #222222;
+  color: #E3DAC9;
+  height: 34px;
+}
+
+.pure-table th {
+  border-width: 0px;
+  height: 18px;
+}
+
+.pure-table td {
+  border-width: 0px;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+#info-window {
+  margin-top:    5px;
+  margin-bottom: 5px;
+  padding: 2px;
+  overflow: hidden;
+  background-color: #444444;
+  border: 2px;
+  border-style: inset;
+  border-color: #666666;
+  height: 308px;
+  width: 324px;
+}
+
+.error {
+  color: #FEC643;
+  font-size: small;
+  word-wrap: break-word;
+}
+
+.info {
+  font-size: small;
+  word-wrap: break-word;
+}
+
+.alerts-leave {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}

@@ -42,6 +42,7 @@
     "chai": "^3.5.0",
     "electron": "^1.6.10",
     "mocha": "^3.4.1",
+    "react-shallow-testutils": "^3.0.0",
     "react-test-renderer": "^15.5.4",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0",
@@ -51,11 +52,13 @@
     "bluebird": "^3.5.0",
     "lodash": "^4.17.4",
     "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
     "redux-promise-middleware": "^4.3.0",
-    "smart-buffer": "^3.0.3"
+    "smart-buffer": "^3.0.3",
+    "uuid": "^3.0.1"
   }
 }

@@ -9,13 +9,18 @@ const promiseMiddleware = require('redux-promise-middleware').default;
 
 const { createStore, combineReducers, applyMiddleware } = require('redux');
 
-const { FileBrowser, FileSaver }          = require('../file');
+const { FileBrowser, FileSaver } = require('../file');
+const file_reducers              = require('../file/reducers');
+
 const { CharicterSheet }       = require('../charicter_sheet');
-const file_reducers            = require('../file/reducers');
 const charicter_sheet_reducers = require('../charicter_sheet/reducers');
 
-let reducers   = combineReducers(Object.assign({}, file_reducers, charicter_sheet_reducers));
-let middleware = applyMiddleware(logger, promiseMiddleware());
+const { InfoWindow }         = require('../info_window')
+const info_window_reducers   = require('../info_window/reducers')
+const info_window_middleware = require('../info_window/middleware')
+
+let reducers   = combineReducers(Object.assign({}, file_reducers, charicter_sheet_reducers, info_window_reducers));
+let middleware = applyMiddleware(logger, promiseMiddleware(), info_window_middleware);
 let store      = createStore(reducers, middleware);
 
 class Editor extends React.Component {
@@ -28,17 +33,22 @@ class Editor extends React.Component {
   render() {
     return <Provider store={store}>
     <div id='editor'>
-      <div className='pure-g'>
+      <div className='pure-g' id='menu-bar'>
         <div className='pure-u-20-24'>
           <FileBrowser />
           <FileSaver />
         </div>
         <div className='pure-u-4-24' id='close-window'>
-          <a onClick={ this.closeWindow }><i className='fa fa-window-close-o'></i></a>
+          <a className="close-button" onClick={ this.closeWindow }><i className='fa fa-window-close-o'></i></a>
         </div>
       </div>
+      <div className='pure-u-12-24' id='sheet-container'>
         <CharicterSheet />
       </div>
+      <div className='pure-u-12-24' id='info-window-container'>
+        <InfoWindow />
+      </div>
+    </div>
     </Provider>
   }
 

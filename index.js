@@ -5,7 +5,7 @@ const {app, BrowserWindow, dialog} = require('electron');
 let window;
 
 function start() {
-  window = new BrowserWindow({width: 800, height: 600});
+  window = new BrowserWindow({width: 341, height: 672});
 
   window.loadURL(`file://${__dirname}/index.html`);
 

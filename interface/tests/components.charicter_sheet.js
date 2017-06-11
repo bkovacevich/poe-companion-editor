@@ -9,6 +9,7 @@ const helpers = require('./helpers');
 const actions = require('../src/components/charicter_sheet/actions');
 
 const { CharicterSheet, TestCharicterSheet } = require('../src/components/charicter_sheet');
+const { renderIntoDocument, scryRenderedDOMComponentsWithClass, scryRenderedDOMComponentsWithTag, scryRenderedComponentsWithType } = require('react-dom/test-utils');
 
 describe('.interface.components.CharicterSheet', function() {
   let store;
@@ -36,6 +37,7 @@ describe('.interface.components.CharicterSheet', function() {
       },
       stat_total: 75,
       base_offset: 807616,
+      charicter_name: 'Eder',
     };
 
     initial_state = {
@@ -76,12 +78,14 @@ describe('.interface.components.CharicterSheet', function() {
         },
         stat_total: 75,
         base_offset: 807616,
+        charicter_name: 'Eder',
       });
     });
   });
 
   context('when rendered without redux', function() {
     let rendered;
+
 
     beforeEach(function() {
       rendered = helpers.shallowRender(<TestCharicterSheet charicter_sheet={ fake_sheet }/>);
@@ -91,17 +95,19 @@ describe('.interface.components.CharicterSheet', function() {
       expect(rendered.type).to.equal('table');
 
       expect(rendered.props.id).to.equal('charicter-sheet');
-      expect(rendered.props.children[0].type).to.equal('thead');
-      expect(rendered.props.children[1].type).to.equal('tbody');
-      expect(rendered.props.children[2].type).to.equal('tfoot');
+      let footer      = helpers.findAllWithType(rendered, 'tfoot')[0];
+      let footer_data = helpers.findAllWithType(footer, 'td');
+      expect(helpers.listChildValues(footer_data)).to.deep.equal(['Total', 75]);
 
-      expect(rendered.props.children[2].props.children.props.children[0].props.children).to.equal('Total');
-      expect(rendered.props.children[2].props.children.props.children[1].props.children).to.equal(75);
+      let header      = helpers.findAllWithType(rendered, 'thead')[0];
+      let header_data = helpers.findAllWithType(header, 'th');
+      expect(helpers.listChildValues(header_data)).to.deep.equal(['Character', 'Eder']);
 
-      let stat_names  = rendered.props.children[1].props.children.map(function(child) {return child.props.children[0].props.children});
-      let stat_values = rendered.props.children[1].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
+      let body        = helpers.findAllWithType(rendered, 'table')[0];
+      let body_fields = helpers.findAllWithClass(body, 'stat-title');
+      let body_values = helpers.findAllWithClass(body, 'stat-box');
 
-      expect(stat_names).to.deep.equal([
+      expect(helpers.listChildValues(body_fields)).to.deep.equal([
         'Might',
         'Constitution',
         'Dexterity',
@@ -110,7 +116,7 @@ describe('.interface.components.CharicterSheet', function() {
         'Resolve',
       ]);
 
-      expect(stat_values).to.deep.equal([15,16,11,12,10,11]);
+      expect(helpers.listChildValues(body_values)).to.deep.equal([15,16,11,12,10,11]);
     });
 
     context('when there is no sheet', function() {
@@ -123,17 +129,18 @@ describe('.interface.components.CharicterSheet', function() {
 
         expect(rendered.props.id).to.equal('charicter-sheet');
 
-        expect(rendered.props.children[0].type).to.equal('thead');
+        let footer      = helpers.findAllWithType(rendered, 'tfoot')[0];
+        let footer_data = helpers.findAllWithType(footer, 'td');
+        expect(helpers.listChildValues(footer_data)).to.deep.equal(['Total', '']);
 
-        expect(rendered.props.children[1].type).to.equal('tbody');
+        let header      = helpers.findAllWithType(rendered, 'thead')[0];
+        let header_data = helpers.findAllWithType(header, 'th');
+        expect(helpers.listChildValues(header_data)).to.deep.equal(['Character', '']);
 
-        expect(rendered.props.children[2].props.children.props.children[0].props.children).to.equal('Total');
-        expect(rendered.props.children[2].props.children.props.children[1].props.children).to.equal('');
+        let body        = helpers.findAllWithType(rendered, 'table')[0];
+        let body_fields = helpers.findAllWithClass(body, 'stat-title');
 
-        let stat_names  = rendered.props.children[1].props.children.map(function(child) {return child.props.children[0].props.children});
-        let stat_values = rendered.props.children[1].props.children.map(function(child) {return child.props.children[1].props.children.props.value});
-
-        expect(stat_names).to.deep.equal([
+        expect(helpers.listChildValues(body_fields)).to.deep.equal([
           'Might',
           'Constitution',
           'Dexterity',
@@ -141,8 +148,6 @@ describe('.interface.components.CharicterSheet', function() {
           'Intellect',
           'Resolve',
         ]);
-
-        expect(stat_values).to.deep.equal(['', '', '', '', '', '']);
       });
     });
 

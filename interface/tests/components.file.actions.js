@@ -33,6 +33,30 @@ describe('.interface.components.file.actions', function() {
           expect(sheet).to.deep.equal({ fake: 'sheet' });
         });
     });
+
+    context('when the file fails to load', function() {
+      beforeEach(function() {
+        CompanionAssetEditor.prototype.load.restore();
+
+        this.sinon.stub(CompanionAssetEditor.prototype, 'load').rejects(new Error('fake error'));
+      });
+
+      it('throws a generic error', function() {
+        let filename = 'fake_filename';
+
+        let action = file_actions.loadFile(filename);
+
+        return action.payload
+          .then(function() {
+            expect('should not get here').to.not.exist();
+          })
+          .catch(function(err) {
+            expect(err).to.exist;
+
+            expect(err.message).to.contain('Could not read file: fake_filename');
+          })
+      });
+    });
   });
 
   describe('.saveFile', function() {

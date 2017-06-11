@@ -23,7 +23,7 @@ class CharicterSheet extends React.Component {
 
     let className;
     let rows = [];
-    let charicter_name = ' ';
+    let charicter_name = '';
 
     if (this.props.charicter_sheet) {
       let stat_values = this.props.charicter_sheet.values;
@@ -54,7 +54,8 @@ class CharicterSheet extends React.Component {
     return <table id='charicter-sheet' className='pure-table pure-table-horizontal'>
         <thead>
           <tr>
-            <th colSpan='2'>{ charicter_name }</th>
+            <th>Character</th>
+            <th>{ charicter_name }</th>
           </tr>
         </thead>
         <tbody>

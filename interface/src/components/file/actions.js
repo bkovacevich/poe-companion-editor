@@ -6,6 +6,9 @@ exports.loadFile  = function(filename) {
   let companion_asset_editor = new CompanionAssetEditor(filename);
 
   let payload = companion_asset_editor.load()
+    .catch(function(error) {
+      throw new Error(`Could not read file: ${filename}`);
+    })
     .then(() => {
       let sheet = companion_asset_editor.getCharicterSheet();
 
