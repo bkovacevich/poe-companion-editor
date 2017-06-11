@@ -4,8 +4,44 @@ const { remote }  = require('electron');
 const React       = require('react');
 const { connect } = require('react-redux');
 const path        = require('path');
+const Promise     = require('bluebird');
+const fs          = require('fs');
+const os          = require('os');
+
 
 const file_actions = require('./actions');
+
+function findDefaultPath(home, filename) {
+  if (filename) {
+    return Promise.resolve(path.dirname(filename));
+  }
+
+  switch(os.platform()) {
+    case 'win32': {
+      return Promise.resolve(`C:\\Program Files\\Steam (x86)\\SteamApps\\Common\\Pillars of Eternity\\PillarsOfEternity_Data\\assetbundles\\prefabs\\objectbundle`);
+    }
+
+    case 'darwin': {
+      return Promise.resolve(`${home}/Library/Application Support/SteamSteam/Apps/common/Pillars of Eternity/PillarsOfEternity_Data/assetbundles/prefabs/objectbundle`);
+    }
+
+    default: {
+      var accessPromise = Promise.promisify(fs.access);
+
+      let steam_path   = `${home}/.local/share/Steam`;
+      let pillars_path = `SteamApps/common/Pillars of Eternity/PillarsOfEternity_Data/assetbundles/prefabs/objectbundle`;
+
+      return accessPromise(`${steam_path}/${pillars_path}`, fs.constants.R_OK | fs.constants.W_OK)
+        .catch((err) => {
+          steam_path = `${home}/.steam/steam`;
+          return;
+        })
+        .then(() => {
+          return Promise.resolve(`${steam_path}/${pillars_path}`);
+        });
+    }
+  }
+}
 
 class FileBrowser extends React.Component {
   constructor(store) {
@@ -30,18 +66,22 @@ class FileBrowser extends React.Component {
       return;
     }
 
-    let file_browser_options = {};
-    if (this.props.filename) {
-      file_browser_options.defaultPath = path.dirname(this.props.filename);
-    }
+    let home = remote.app.getPath('home');
 
-    remote.dialog.showOpenDialog(null, file_browser_options, (results) => {
+    return findDefaultPath(home, this.props.filename)
+      .then((default_path) => {
+        let file_browser_options = {
+          defaultPath: default_path,
+        };
 
-      if (results && results.length) {
-        let filename = results[0];
-        this.props.dispatch(file_actions.loadFile(filename));
-      }
-    });
+        remote.dialog.showOpenDialog(null, file_browser_options, (results) => {
+
+          if (results && results.length) {
+            let filename = results[0];
+            this.props.dispatch(file_actions.loadFile(filename));
+          }
+        });
+      });
   }
 }
 
@@ -102,3 +142,5 @@ exports.FileBrowser     = connect(mapFileBrowserStateToProps)(FileBrowser);
 
 exports.TestFileSaver = FileSaver;
 exports.FileSaver     = connect(mapFileSaverStateToProps)(FileSaver);
+
+exports.testFindDefaultPath = findDefaultPath;

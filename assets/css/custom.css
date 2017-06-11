@@ -48,14 +48,14 @@ input {
 #info-window {
   margin-top:    5px;
   margin-bottom: 5px;
+  margin-right: 5px;
   padding: 2px;
   overflow: hidden;
   background-color: #444444;
   border: 2px;
   border-style: inset;
   border-color: #666666;
-  height: 308px;
-  width: 324px;
+  height: 324px;
 }
 
 .error {

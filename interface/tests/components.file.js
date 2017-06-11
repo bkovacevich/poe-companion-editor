@@ -3,11 +3,12 @@
 const { expect }      = require('chai');
 const React           = require('react');
 const { createStore } = require('redux');
-
+const os              = require('os');
+const fs              = require('fs');
 
 const helpers = require('./helpers');
 
-const { FileBrowser, TestFileBrowser, TestFileSaver, FileSaver } = require('../src/components/file');
+const { testFindDefaultPath, FileBrowser, TestFileBrowser, TestFileSaver, FileSaver } = require('../src/components/file');
 
 describe('interface.components.file', function() {
   let store;
@@ -26,6 +27,99 @@ describe('interface.components.file', function() {
     reducer = this.sinon.stub().returns(initial_state);
 
     store = createStore(reducer);
+  });
+
+  describe('findDefaultPath', function() {
+    let home;
+    let filename;
+
+    beforeEach(function() {
+      home = '/fake/home';
+      filename = '';
+    });
+
+    context('when filename is set', function() {
+      beforeEach(function() {
+        filename = '/base/filename';
+      });
+
+      it('returns the path for files directory', function() {
+        return testFindDefaultPath(home, filename)
+          .catch(function(err) {
+            expect(err).to.not.exist;
+          })
+          .then(function(path) {
+            expect(path).to.equal('/base');
+          });
+      });
+    });
+
+    context('when the platform is win32', function() {
+      beforeEach(function() {
+        this.sinon.stub(os, 'platform').returns('win32');
+      });
+
+      it('resolves to the default windowes path', function() {
+        return testFindDefaultPath(home, filename)
+          .catch(function(err) {
+            expect(err).to.not.exist;
+          })
+          .then(function(path) {
+            expect(path).to.equal('C:\\Program Files\\Steam (x86)\\SteamApps\\Common\\Pillars of Eternity\\PillarsOfEternity_Data\\assetbundles\\prefabs\\objectbundle');
+          });
+      });
+    });
+
+    context('when the platform is darwin', function() {
+      beforeEach(function() {
+        this.sinon.stub(os, 'platform').returns('darwin');
+      });
+
+      it('resolves to the default mac path', function() {
+        return testFindDefaultPath(home, filename)
+          .catch(function(err) {
+            expect(err).to.not.exist;
+          })
+          .then(function(path) {
+            expect(path).to.equal('/fake/home/Library/Application Support/SteamSteam/Apps/common/Pillars of Eternity/PillarsOfEternity_Data/assetbundles/prefabs/objectbundle');
+          });
+      });
+    });
+
+    context('when the platform is not win32 or darwin', function() {
+      context('and the ~/.local/share/Steam path exists', function() {
+        beforeEach(function() {
+          this.sinon.stub(fs, 'access').yields();
+        });
+
+        it('uses that path', function() {
+          return testFindDefaultPath(home, filename)
+            .catch(function(err) {
+              expect(err).to.not.exist;
+            })
+            .then(function(path) {
+              expect(path).to.equal('/fake/home/.local/share/Steam/SteamApps/common/Pillars of Eternity/PillarsOfEternity_Data/assetbundles/prefabs/objectbundle');
+            });
+        });
+      });
+
+      context('when the ~/.local/share/Steam path does not exist', function() {
+        beforeEach(function() {
+          this.sinon.stub(fs, 'access').yields(new Error('fake access error'));
+        });
+
+        it('uses the ~/.steam/steam path', function() {
+          return testFindDefaultPath(home, filename)
+            .catch(function(err) {
+              expect(err).to.not.exist;
+            })
+            .then(function(path) {
+              expect(path).to.equal('/fake/home/.steam/steam/SteamApps/common/Pillars of Eternity/PillarsOfEternity_Data/assetbundles/prefabs/objectbundle');
+            });
+        });
+
+      });
+    });
   });
 
   describe('FileBrowser', function() {
