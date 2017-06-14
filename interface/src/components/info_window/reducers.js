@@ -13,7 +13,7 @@ exports.infoReducer = function infoReducer(state=initial_state, action) {
       if (new_state.length && new_state[0].message === action.payload.message) {
         new_state[0].id = action.payload.id;
       } else {
-        new_state.push(action.payload);
+        new_state.unshift(action.payload);
       }
 
       return new_state;

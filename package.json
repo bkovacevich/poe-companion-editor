@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register interface/tests tests",
     "start": "./node_modules/electron/cli.js .",
-    "build": "webpack"
+    "build": "webpack",
+    "package": "rm -rf POECompanionEditor-linux-x64 && electron-packager . POECompanionEditor"
   },
   "babel": {
     "presets": [
@@ -41,6 +42,7 @@
     "babel-preset-react": "^6.24.1",
     "chai": "^3.5.0",
     "electron": "^1.6.10",
+    "electron-packager": "^8.7.1",
     "mocha": "^3.4.1",
     "react-shallow-testutils": "^3.0.0",
     "react-test-renderer": "^15.5.4",

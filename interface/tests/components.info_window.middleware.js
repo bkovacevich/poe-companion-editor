@@ -35,12 +35,13 @@ describe('.interface.components.info_window.middleware', function() {
 
   });
 
-  context('when there is a error string in the payload', function() {
+  context('when the action is CHANGE_STAT_FAILURE', function() {
     let error;
 
     beforeEach(function() {
-      error                = 'fake-error';
-      action.payload.error = error;
+      error          = 'fake-error';
+      action.payload = error;
+      action.type    = 'CHANGE_STAT_FAILURE';
     });
 
     it('dispatches an error action with an unique id', function() {
@@ -52,7 +53,7 @@ describe('.interface.components.info_window.middleware', function() {
         payload: {
           id:       'fake-uuid',
           message:  'fake-error',
-          type:     'FAKE_ACTION',
+          type:     'CHANGE_STAT_FAILURE',
           category: 'error',
         },
       });
@@ -174,12 +175,13 @@ describe('.interface.components.info_window.middleware', function() {
   });
 
 
-  context('when there is an arror in the payload', function() {
+  context('when an error action is dispatched', function() {
     let error;
 
     beforeEach(function() {
       error                = new Error('fake-error');
-      action.payload.error = error;
+      action.payload       = error;
+      action.type          = 'LOAD_FILE_REJECTED';
     });
 
     it('dispatches a INFO_WINDOW_CLEAR_ID action after 15 seconds', function() {
@@ -205,40 +207,6 @@ describe('.interface.components.info_window.middleware', function() {
       });
 
       clock.restore();
-    });
-
-
-    it('dispatches an info action with an unique id', function() {
-      info_window_middleware(store)(next)(action);
-
-      expect(store.dispatch).to.have.been.calledOnce;
-      expect(store.dispatch.args[0][0]).to.deep.equal({
-        type:    'INFO_WINDOW_ALERT',
-        payload: {
-          id:       'fake-uuid',
-          message:  'fake-error',
-          type:     'FAKE_ACTION',
-          category: 'error',
-        },
-      });
-    });
-
-    context('that is null', function() {
-      beforeEach(function() {
-        action.payload.error = null;
-      });
-
-      it('dispatches a INFO_WINDOW_CLEAR_TYPE event', function() {
-        info_window_middleware(store)(next)(action);
-
-        expect(store.dispatch).to.have.been.calledOnce;
-        expect(store.dispatch.args[0][0]).to.deep.equal({
-          type:    'INFO_WINDOW_CLEAR_TYPE',
-          payload: {
-            type: 'FAKE_ACTION',
-          },
-        });
-      });
     });
   });
 });

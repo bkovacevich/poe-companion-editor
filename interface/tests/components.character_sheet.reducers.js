@@ -2,9 +2,9 @@
 
 const { expect } = require('chai');
 
-const charicter_sheet_reducer = require('../src/components/charicter_sheet/reducers');
+const character_sheet_reducer = require('../src/components/character_sheet/reducers');
 
-describe('interface.components.charicter_sheet.reducer', function() {
+describe('interface.components.character_sheet.reducer', function() {
   let action;
   let state;
 
@@ -23,11 +23,34 @@ describe('interface.components.charicter_sheet.reducer', function() {
       };
     });
 
-    it('sets the charicter_sheet', function() {
-      let new_state = charicter_sheet_reducer.charicterSheet(state, action);
+    it('sets the character_sheet', function() {
+      let new_state = character_sheet_reducer.characterSheet(state, action);
 
       expect(new_state).to.deep.equal({
-        charicter_sheet: { fake: 'sheet' },
+        character_sheet: { fake: 'sheet' },
+        error:           null,
+      });
+    });
+  });
+
+  context('on a LOAD_FILE_REJECTED event', function() {
+    beforeEach(function() {
+      action = {
+        type:    'LOAD_FILE_REJECTED',
+        payload: new Error('fake-file-error'),
+      };
+
+      state = {
+        error:           null,
+        character_sheet: { fake: 'sheet' },
+      };
+    });
+
+    it('resets the character_sheet', function() {
+      let new_state = character_sheet_reducer.characterSheet(state, action);
+
+      expect(new_state).to.deep.equal({
+        character_sheet: null,
         error:           null,
       });
     });
@@ -51,7 +74,7 @@ describe('interface.components.charicter_sheet.reducer', function() {
 
       state = {
         error: null,
-        charicter_sheet: sheet,
+        character_sheet: sheet,
       }
 
       action = {
@@ -64,10 +87,10 @@ describe('interface.components.charicter_sheet.reducer', function() {
     });
 
     it('updates the stat and total', function() {
-      let new_state = charicter_sheet_reducer.charicterSheet(state, action);
+      let new_state = character_sheet_reducer.characterSheet(state, action);
 
       expect(new_state).to.deep.equal({
-        charicter_sheet: {
+        character_sheet: {
           values: {
             might:         18,
             constitution:  16,
@@ -88,10 +111,10 @@ describe('interface.components.charicter_sheet.reducer', function() {
       });
 
       it('treats it as a zero', function() {
-        let new_state = charicter_sheet_reducer.charicterSheet(state, action);
+        let new_state = character_sheet_reducer.characterSheet(state, action);
 
         expect(new_state).to.deep.equal({
-          charicter_sheet: {
+          character_sheet: {
             values: {
               might:         '',
               constitution:  16,
@@ -112,7 +135,7 @@ describe('interface.components.charicter_sheet.reducer', function() {
     beforeEach(function() {
       state = {
         error: null,
-        charicter_sheet: { fake: 'sheet' },
+        character_sheet: { fake: 'sheet' },
       };
 
       action = {
@@ -122,10 +145,10 @@ describe('interface.components.charicter_sheet.reducer', function() {
     });
 
     it('sets the error in the state', function() {
-      let new_state = charicter_sheet_reducer.charicterSheet(state, action);
+      let new_state = character_sheet_reducer.characterSheet(state, action);
 
       expect(new_state).to.deep.equal({
-        charicter_sheet: { fake: 'sheet' },
+        character_sheet: { fake: 'sheet' },
         error:           new Error('Fake Error'),
       });
     });

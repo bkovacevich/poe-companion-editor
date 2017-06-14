@@ -4,14 +4,14 @@ const { expect } = require('chai');
 
 const { infoReducer } = require('../src/components/info_window/reducers');
 
-describe('interface.components.charicter_sheet.reducer', function() {
+describe('interface.components.character_sheet.reducer', function() {
   describe('.infoReducer', function() {
     let initial_state;
     let action;
 
     context('on a INFO_WINDOW_ALERT event', function() {
       beforeEach(function() {
-        initial_state = [];
+        initial_state = [{old: 'state'}];
 
         action = {
           type: 'INFO_WINDOW_ALERT',
@@ -34,6 +34,9 @@ describe('interface.components.charicter_sheet.reducer', function() {
             message:  'fake message',
             category: 'error',
           },
+          {
+            old: 'state',
+          }
         ]);
       });
 

@@ -3,15 +3,21 @@
 const _ = require('lodash');
 
 const initial_state = {
-  charicter_sheet: null,
+  character_sheet: null,
   error:           null,
 };
 
-function charicterSheet(state=initial_state, action) {
+function characterSheet(state=initial_state, action) {
   switch (action.type) {
     case 'LOAD_FILE_FULFILLED': {
       return Object.assign({}, state, {
-        charicter_sheet: action.payload.sheet,
+        character_sheet: action.payload.sheet,
+      });
+    }
+
+    case 'LOAD_FILE_REJECTED': {
+      return Object.assign({}, state, {
+        character_sheet: null,
       });
     }
 
@@ -20,10 +26,10 @@ function charicterSheet(state=initial_state, action) {
 
       let next_state = _.cloneDeep(state);
 
-      let new_total = state.charicter_sheet.stat_total - state.charicter_sheet.values[stat] + (value || 0);
+      let new_total = state.character_sheet.stat_total - state.character_sheet.values[stat] + (value || 0);
 
-      next_state.charicter_sheet.values[stat] = value;
-      next_state.charicter_sheet.stat_total   = new_total;
+      next_state.character_sheet.values[stat] = value;
+      next_state.character_sheet.stat_total   = new_total;
 
       return Object.assign({}, state, next_state);
     }
@@ -38,4 +44,4 @@ function charicterSheet(state=initial_state, action) {
   return state;
 }
 
-exports.charicterSheet = charicterSheet;
+exports.characterSheet = characterSheet;

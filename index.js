@@ -5,11 +5,13 @@ const {app, BrowserWindow, dialog} = require('electron');
 let window;
 
 function start() {
-  window = new BrowserWindow({width: 341, height: 672});
+  window = new BrowserWindow({width: 672, height: 376, frame: false, backgroundColor: '#222222'});
+
+  window.setMenu(null);
 
   window.loadURL(`file://${__dirname}/index.html`);
 
-  window.webContents.openDevTools();
+  // window.webContents.openDevTools();
 }
 
 app.on('ready', start);

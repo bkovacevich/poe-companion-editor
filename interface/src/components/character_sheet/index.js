@@ -23,12 +23,12 @@ class CharicterSheet extends React.Component {
 
     let className;
     let rows = [];
-    let charicter_name = '';
+    let character_name = '';
 
-    if (this.props.charicter_sheet) {
-      let stat_values = this.props.charicter_sheet.values;
+    if (this.props.character_sheet) {
+      let stat_values = this.props.character_sheet.values;
 
-      charicter_name = this.props.charicter_sheet.charicter_name;
+      character_name = this.props.character_sheet.character_name;
 
       stats.forEach((stat) => {
         rows.push(
@@ -51,11 +51,11 @@ class CharicterSheet extends React.Component {
       });
     }
 
-    return <table id='charicter-sheet' className='pure-table pure-table-horizontal'>
+    return <table id='character-sheet' className='pure-table pure-table-horizontal'>
         <thead>
           <tr>
             <th>Character</th>
-            <th>{ charicter_name }</th>
+            <th>{ character_name }</th>
           </tr>
         </thead>
         <tbody>
@@ -64,7 +64,7 @@ class CharicterSheet extends React.Component {
         <tfoot>
           <tr>
             <td>Total</td>
-            <td>{ this.props.charicter_sheet ? this.props.charicter_sheet.stat_total : '' }</td>
+            <td>{ this.props.character_sheet ? this.props.character_sheet.stat_total : '' }</td>
           </tr>
         </tfoot>
       </table>;
@@ -87,7 +87,7 @@ class CharicterSheet extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    charicter_sheet: state.charicterSheet.charicter_sheet,
+    character_sheet: state.characterSheet.character_sheet,
   }
 }
 

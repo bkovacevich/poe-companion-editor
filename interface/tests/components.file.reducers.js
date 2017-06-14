@@ -76,7 +76,7 @@ describe('interface.components.file.reducers', function() {
         };
       });
 
-      it('sets the state for filename, file_loading and charicter_sheet', function() {
+      it('sets the state for filename, file_loading and character_sheet', function() {
         let new_state = file_reducers.file(state, action);
 
         expect(new_state).to.deep.equal({
@@ -146,7 +146,7 @@ describe('interface.components.file.reducers', function() {
         };
       });
 
-      it('sets the state for filename, file_loading and charicter_sheet', function() {
+      it('sets the state for filename, file_loading and character_sheet', function() {
         let new_state = file_reducers.file(state, action);
 
         expect(new_state).to.deep.equal({

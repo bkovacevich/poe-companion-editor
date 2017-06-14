@@ -6,9 +6,9 @@ const { createStore } = require('redux');
 
 const helpers = require('./helpers');
 
-const actions = require('../src/components/charicter_sheet/actions');
+const actions = require('../src/components/character_sheet/actions');
 
-const { CharicterSheet, TestCharicterSheet } = require('../src/components/charicter_sheet');
+const { CharicterSheet, TestCharicterSheet } = require('../src/components/character_sheet');
 const { renderIntoDocument, scryRenderedDOMComponentsWithClass, scryRenderedDOMComponentsWithTag, scryRenderedComponentsWithType } = require('react-dom/test-utils');
 
 describe('.interface.components.CharicterSheet', function() {
@@ -37,12 +37,12 @@ describe('.interface.components.CharicterSheet', function() {
       },
       stat_total: 75,
       base_offset: 807616,
-      charicter_name: 'Eder',
+      character_name: 'Eder',
     };
 
     initial_state = {
-      charicterSheet: {
-        charicter_sheet: fake_sheet,
+      characterSheet: {
+        character_sheet: fake_sheet,
       },
     };
 
@@ -58,8 +58,8 @@ describe('.interface.components.CharicterSheet', function() {
       rendered = helpers.shallowRender(<CharicterSheet store={ store }/>);
     });
 
-    it('sets charicter sheet property', function() {
-      expect(rendered.props.charicter_sheet).to.deep.equal({
+    it('sets character sheet property', function() {
+      expect(rendered.props.character_sheet).to.deep.equal({
         values: {
           might:         15,
           constitution:  16,
@@ -78,7 +78,7 @@ describe('.interface.components.CharicterSheet', function() {
         },
         stat_total: 75,
         base_offset: 807616,
-        charicter_name: 'Eder',
+        character_name: 'Eder',
       });
     });
   });
@@ -88,13 +88,13 @@ describe('.interface.components.CharicterSheet', function() {
 
 
     beforeEach(function() {
-      rendered = helpers.shallowRender(<TestCharicterSheet charicter_sheet={ fake_sheet }/>);
+      rendered = helpers.shallowRender(<TestCharicterSheet character_sheet={ fake_sheet }/>);
     });
 
     it('renders a table', function() {
       expect(rendered.type).to.equal('table');
 
-      expect(rendered.props.id).to.equal('charicter-sheet');
+      expect(rendered.props.id).to.equal('character-sheet');
       let footer      = helpers.findAllWithType(rendered, 'tfoot')[0];
       let footer_data = helpers.findAllWithType(footer, 'td');
       expect(helpers.listChildValues(footer_data)).to.deep.equal(['Total', 75]);
@@ -127,7 +127,7 @@ describe('.interface.components.CharicterSheet', function() {
       it('renders an inactive sheet', function() {
         expect(rendered.type).to.equal('table');
 
-        expect(rendered.props.id).to.equal('charicter-sheet');
+        expect(rendered.props.id).to.equal('character-sheet');
 
         let footer      = helpers.findAllWithType(rendered, 'tfoot')[0];
         let footer_data = helpers.findAllWithType(footer, 'td');
@@ -155,7 +155,7 @@ describe('.interface.components.CharicterSheet', function() {
 
   describe('#changeStat', function() {
     let event;
-    let charicter_sheet;
+    let character_sheet;
 
     beforeEach(function() {
       event = {
@@ -166,17 +166,17 @@ describe('.interface.components.CharicterSheet', function() {
         }
       };
 
-      charicter_sheet = new TestCharicterSheet(store);
+      character_sheet = new TestCharicterSheet(store);
     });
 
     beforeEach(function() {
       this.sinon.spy(actions, 'changeStat');
-      this.sinon.stub(charicter_sheet.props, 'dispatch').returns();
+      this.sinon.stub(character_sheet.props, 'dispatch').returns();
     });
 
     it('dispatches a change stat action', function() {
 
-      charicter_sheet.changeStat(event);
+      character_sheet.changeStat(event);
 
       expect(actions.changeStat).to.have.been.calledOnce;
       expect(actions.changeStat.args[0]).to.deep.equal([
@@ -184,8 +184,8 @@ describe('.interface.components.CharicterSheet', function() {
         10,
       ]);
 
-      expect(charicter_sheet.props.dispatch).to.have.been.calledOnce;
-      expect(charicter_sheet.props.dispatch.args[0]).to.deep.equal([
+      expect(character_sheet.props.dispatch).to.have.been.calledOnce;
+      expect(character_sheet.props.dispatch.args[0]).to.deep.equal([
         {
           type:    'CHANGE_STAT',
           payload: {
@@ -202,10 +202,10 @@ describe('.interface.components.CharicterSheet', function() {
       });
 
       it('does nothing', function() {
-        charicter_sheet.changeStat(event);
+        character_sheet.changeStat(event);
 
         expect(actions.changeStat).to.not.have.been.called;
-        expect(charicter_sheet.props.dispatch).to.not.have.been.called;
+        expect(character_sheet.props.dispatch).to.not.have.been.called;
       });
     });
   });

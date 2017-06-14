@@ -1,3 +1,11 @@
+body {
+  -webkit-app-region: drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+
 #application {
   background-color: #222222;
   color: #E3DAC9
@@ -15,6 +23,7 @@
 input {
   background-color: #444444;
   border-color: #666666;
+  -webkit-app-region: no-drag;
 }
 
 #close-window {
@@ -43,6 +52,7 @@ input {
 
 .close-button {
   cursor: pointer;
+  -webkit-app-region: no-drag;
 }
 
 #info-window {
@@ -56,6 +66,7 @@ input {
   border-style: inset;
   border-color: #666666;
   height: 324px;
+  -webkit-app-region: no-drag;
 }
 
 .error {

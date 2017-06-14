@@ -6,11 +6,11 @@ const { createStore } = require('redux');
 
 const helpers = require('./helpers');
 
-const actions = require('../src/components/charicter_sheet/actions');
+const actions = require('../src/components/character_sheet/actions');
 
 const MAX_32_BIT_INT = 2147483647;
 
-describe('interface.components.charicter_sheet.actions', function() {
+describe('interface.components.character_sheet.actions', function() {
   describe('changeStat', function() {
     let stat;
     let value;

@@ -30,31 +30,12 @@ function dispatchAlert(store, category, type, message) {
 const handleError = (store) => (next) => (action) => {
   let payload = action.payload ? action.payload : {};
 
-  if(payload.error) {
-    let message = payload.error.message || payload.error;
-
-    let error_id = uuid.v4();
-    dispatchAlert(store, 'error', action.type, message);
-  }
-
-  if(payload.error === null) {
-    store.dispatch({
-      type: 'INFO_WINDOW_CLEAR_TYPE',
-      payload: {
-        type: action.type,
-      },
-    });
-  }
-
-  if(action.type === 'LOAD_FILE_REJECTED') {
-    let message = payload.message;
-
-    let error_id = uuid.v4();
-    dispatchAlert(store, 'error', action.type, message);
-  }
-
-  if(action.type === 'SAVE_FILE_REJECTED') {
-    let message = payload.message;
+  if(
+    action.type === 'LOAD_FILE_REJECTED'
+    || action.type === 'SAVE_FILE_REJECTED'
+    || action.type === 'CHANGE_STAT_FAILURE'
+  ) {
+    let message = payload.message || payload;
 
     let error_id = uuid.v4();
     dispatchAlert(store, 'error', action.type, message);

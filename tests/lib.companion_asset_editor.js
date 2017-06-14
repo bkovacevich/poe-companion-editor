@@ -89,7 +89,7 @@ describe('CompanionAssetEditor', function() {
       });
     });
 
-    it('gets the current charicter sheet stats', function() {
+    it('gets the current character sheet stats', function() {
       return asset_editor.load()
         .catch(function(err) {
           expect(err).to.not.exist();
@@ -105,7 +105,7 @@ describe('CompanionAssetEditor', function() {
       return asset_editor.load();
     });
 
-    it('gets the current charicter sheet stats', function() {
+    it('gets the current character sheet stats', function() {
       let sheet = asset_editor.getCharicterSheet()
 
       expect(sheet).to.deep.equal({
@@ -127,7 +127,7 @@ describe('CompanionAssetEditor', function() {
         },
         stat_total:     75,
         base_offset:    807616,
-        charicter_name: 'Eder',
+        character_name: 'Eder',
       });
     });
   });
@@ -172,7 +172,7 @@ describe('CompanionAssetEditor', function() {
             },
             stat_total:     83,
             base_offset:    807616,
-            charicter_name: 'Eder',
+            character_name: 'Eder',
           });
         });
     });
@@ -215,7 +215,7 @@ describe('CompanionAssetEditor', function() {
         },
         stat_total:     75,
         base_offset:    807616,
-        charicter_name: 'Eder',
+        character_name: 'Eder',
       };
 
       for (let stat in new_stats.values) {

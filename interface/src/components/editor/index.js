@@ -12,14 +12,14 @@ const { createStore, combineReducers, applyMiddleware } = require('redux');
 const { FileBrowser, FileSaver } = require('../file');
 const file_reducers              = require('../file/reducers');
 
-const { CharicterSheet }       = require('../charicter_sheet');
-const charicter_sheet_reducers = require('../charicter_sheet/reducers');
+const { CharicterSheet }       = require('../character_sheet');
+const character_sheet_reducers = require('../character_sheet/reducers');
 
 const { InfoWindow }         = require('../info_window')
 const info_window_reducers   = require('../info_window/reducers')
 const info_window_middleware = require('../info_window/middleware')
 
-let reducers   = combineReducers(Object.assign({}, file_reducers, charicter_sheet_reducers, info_window_reducers));
+let reducers   = combineReducers(Object.assign({}, file_reducers, character_sheet_reducers, info_window_reducers));
 let middleware = applyMiddleware(logger, promiseMiddleware(), info_window_middleware);
 let store      = createStore(reducers, middleware);
 

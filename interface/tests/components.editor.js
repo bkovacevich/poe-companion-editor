@@ -18,8 +18,8 @@ describe('interface.components.editor', function() {
       let state = rendered.props.store.getState();
 
       expect(state).to.deep.equal({
-        charicterSheet: {
-          charicter_sheet: null,
+        characterSheet: {
+          character_sheet: null,
           error:           null,
         },
         file: {
@@ -32,7 +32,7 @@ describe('interface.components.editor', function() {
       });
     });
 
-    it('renders a charicter sheet, file browser, and file saver', function() {
+    it('renders a character sheet, file browser, and file saver', function() {
       expect(rendered.props.children.props.children[0].props.children[0].props.children[0].type.displayName).to.equal('Connect(FileBrowser)');
       expect(rendered.props.children.props.children[0].props.children[0].props.children[1].type.displayName).to.equal('Connect(FileSaver)');
 
