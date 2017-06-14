@@ -7,7 +7,11 @@
     "test": "node node_modules/mocha/bin/mocha --compilers js:babel-core/register interface/tests tests",
     "start": "./node_modules/electron/cli.js .",
     "build": "webpack",
-    "package": "rm -rf POECompanionEditor-linux-x64 && electron-packager . POECompanionEditor"
+    "package": "rm -rf POECompanionEditor* && electron-packager --arch x64,ia32 --platform linux,win32,darwin . POECompanionEditor",
+    "dist:linux": "tar -czvf dist/POECompanionEditor-linux-x64.tar.gz POECompanionEditor-linux-x64/ && tar -czvf dist/POECompanionEditor-linux-ia32.tar.gz POECompanionEditor-linux-ia32/",
+    "dist:darwin": "tar -czvf dist/POECompanionEditor-darwin-x64.tar.gz POECompanionEditor-darwin-x64/",
+    "dist:windows": "zip -9 -y -r dist/POECompanionEditor-win32-ia32.zip POECompanionEditor-win32-ia32/ && zip -9 -y -r dist/POECompanionEditor-win32-x64.zip POECompanionEditor-win32-x64/",
+    "deploy": "npm run build && npm run package && npm run dist:linux && npm run dist:darwin && npm run dist:windows"
   },
   "babel": {
     "presets": [
