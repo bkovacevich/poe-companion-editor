@@ -4,10 +4,10 @@ Pillars Of Eternity companion stat editor
 # About
 A simple cross platform application for editing Pillars of Eternity companions base stats.  Compatible with Pillars of Eternity version 3.03 through 3.06.
  
-# Installation
+## Installation
 Download the release for your application and extract.  The executable is names POECompanionEditor or POECompanionEditor.exe for windows.
  
-# Use
+## Use
 
 ***Use this application at your own risk***
 
@@ -17,9 +17,16 @@ I would *highly* recommend backing up the file before you make any changes, as t
  
 The numbers for character statistics are their base stats, before any racial or cultural modifiers.  Thus the in game minimum is 3 and the in game maximum is 18.  You can set them higher, or set them to a negative number, but I would not recommend this because I don't know exactly what would happen.  But if you're feeling brave, go crazy.
  
-# Notes
+## Notes
 * Windows and Darwin versions are currently untested, please let me know about any issues using them.
- 
+
+# Development
+
+* Build: ```npm run build```
+* Test:  ```npm run test```
+* Run a dev version of this application: ```npm run start```
+* Build your own application: ```npm run package```
+
 # Licenses
  
 * This package: [MIT](LICENSE)
