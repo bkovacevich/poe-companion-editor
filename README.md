@@ -5,7 +5,7 @@ Pillars Of Eternity companion stat editor
 A simple cross platform application for editing Pillars of Eternity companions base stats.  Compatible with Pillars of Eternity version 3.03 through 3.06.
  
 ## Installation
-Download the release for your application and extract.  The executable is names POECompanionEditor or POECompanionEditor.exe for windows.
+Download the [release](https://github.com/bkovacevich/poe-companion-editor/releases) for your application and extract.  The executable is names POECompanionEditor or POECompanionEditor.exe for windows.
  
 ## Use
 
